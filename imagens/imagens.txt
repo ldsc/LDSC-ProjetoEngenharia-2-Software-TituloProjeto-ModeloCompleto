@@ -1,0 +1,17 @@
+
+=================================================================================
+		LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+		http://www.lenep.uenf.br
+=================================================================================
+
+
+O diretório de imagens deve conter os arquivos usados pelos modeladores e as imagens das diferentes etapas de um projeto de engenharia completo.
+
+Note que temos subdiretórios para cada etapa do projeto completo.
+
+A vantagem de colocar as imagens em diretório geral/único é facilitar o compartilhamento de imagens.
+
+Por exemplo, uma imagem do pré-projeto poderá ser inteiramente aproveitada nos documentos sobsequentes, não sendo necessário copiar a imagem.
+A mesma só estará no diretório subsequente se for alterada.
+
+Então, quando for procurar uma imagem procure no diretório correspondente ao arquivo que esta manipulando, se não encontrar é porque esta num diretório de etapa anterior.
