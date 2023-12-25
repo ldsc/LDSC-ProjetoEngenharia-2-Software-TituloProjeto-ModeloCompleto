@@ -1,0 +1,12 @@
+A ideia é que o usuário entre primeiro aqui e tenha acesso a documentação básica de Uso do software;
+
+Arquivos e diretórios:
+=======================
+
+ManualDoDesenvolvedor.pdf: 
+	Cópia do manual do desenvolvedor (como foi desenvolvido o software).
+ManualDoUsuario.pdf: 
+	Cópia do manual do usuário (como usar o software).
+ManualTecnico.pdf:
+	Cópia do manual técnico (detalhes técnicos, equações)	
+	

@@ -1,0 +1,5 @@
+Aqui temos os arquivos do editor de texto LyX.
+
+Para editar abra o arquivo ProjetoEngenharia-ManualDoUsuario.lyx no editor lyx,
+selecione o arquivo que quer editar, faça as modificações salve.
+Depois use o master para gerar o pdf da documentação.

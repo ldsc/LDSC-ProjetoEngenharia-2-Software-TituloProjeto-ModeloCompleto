@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.38.4 (Applications 23.08.4) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="Modelo UML">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="datatype" name="datatype"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="constructor" name="constructor"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="friend" name="friend"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="virtual" name="virtual"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical View" name="Logical View" stereotype="folder">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="H5FyjgVD46HL" name="int" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="FUmo5mJGjs0G" name="char" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="iF8q5tiKwxIf" name="bool" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="cltes8z5amrf" name="float" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="Y8tF0tVj9bXC" name="double" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="SGXMDn2nXtSP" name="short" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="zPSZBJChR5uP" name="long" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="xQ86zeGSulo5" name="unsigned int" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="Zot6fJTeitBs" name="unsigned short" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="CNZbRU0Os7Sr" name="unsigned long" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="lgHfS4izsb3W" name="string" stereotype="datatype"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="7CutQrENSgRO" name="const CIntegral&amp;" stereotype="datatype" elementReference="00bLijpVp9vo"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="yRuQ5Lof5sbk" name="CFuncao*" stereotype="datatype" elementReference="VIyMt1qmVyLs"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="utATxymiHKv1K" name="unsigned char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uOQW1lltylFza" name="signed char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uzlfaitrIJFG4" name="signed int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uLRORgMmo9nXy" name="short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uMIhod0RzVUfC" name="unsigned short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u4VcmU1QF5B6E" name="signed short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u1I7ivhrCW8QU" name="long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uhfXfy8K51buI" name="signed long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uvwf3K7pVcdla" name="unsigned long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uOeXxtYfiasq0" name="long double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uCZA67eEJSqPE" name="wchar_t" stereotype="dataType"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="S6SKDsAwZRZ1" name="CFun1G" comment="Representa funcao do primeiro grau, y = c0 + c1 * x;.&#10;@class CFun1G">
+        <generalization xmi:type="uml:Generalization" xmi:id="GmNumVyFbPZn" general="VIyMt1qmVyLs"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="5bEar4KH57fB" general="VIyMt1qmVyLs"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="a4sxrFixUPwY" general="Lq0DELOewBB7"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="dwJ8JDer65gj" general="Lq0DELOewBB7"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="f00l4eTmnt7q" general="Lq0DELOewBB7"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="umRNHMeLsDBzZ" general="VIyMt1qmVyLs"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="vqJVFqIUYzHf" name="c0" comment="&lt; Representa coeficiente linear" visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="I4HroCIYyUoh" name="c1" comment="&lt; Representa coeficiente angular" visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="0rhHKYLFOeib" name="CFun1G"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="T04z0JeGLt69" name="f" comment="Calcula valor da fun��o na posi��o x, y = c0 + c1 * x;.&#10;@return double&#10;@param  _x">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="xTrJ6XtZYvWW" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="5Og4sSjsJO8d" name="_x" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="EAmZ3qh7EN95" name="f">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="yaNV7q6CBEmQ" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="nsv6H3iCXXTb" name="_x" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="4MAcFe6Tor1p" name="_c0" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="hgww151owwuB" name="_c1" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="stsekrTPXOLW" name="C0">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="RKKNFCYDntgu" name="_c0" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="kk4twpHog7QQ" name="C0">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ytnTF7zhRH4e" type="Y8tF0tVj9bXC" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="UbpFUV7CDC59" name="C1">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="zLxfSL3PFqsS" name="_c1" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="xq9N7C1ZnpoH" name="C1">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="KwSW6Vf5qbkJ" type="Y8tF0tVj9bXC" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="wng9bYcZMlwU" name="Entrada" comment="Input the atribut values."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="vv1ikoy3kQZo" name="Saida" comment="Ouput the function."/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="DXUaHO2CK3t2" name="CFun2G" comment="Representa funcao do segundo grau y = c0 + c1*x + c2*x*x;.&#10;@class CFun2G">
+        <generalization xmi:type="uml:Generalization" xmi:id="rp5ZDcL6rCqe" general="S6SKDsAwZRZ1"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="Ot0I4m3sGKQF" general="S6SKDsAwZRZ1"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="s8GhI5M2uk5R" name="c2" comment="&lt; Coeficiente quadr�tico" visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="249sWRwMlBW8" name="CFun2G"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="HgLCu6MlCbSS" name="f" comment="Calcula valor da fun��o na posi��o x, y = c0 + c1 * x + c2 *x*x;.&#10;@return double&#10;@param  _x">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="XKWGT0PlfixX" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="emUYXaxZe6PA" name="_x" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="mIIwrjPTVtz0" name="f">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="lFpQOPvFMuaA" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="Txa61xEXHjnl" name="_x" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="jAUMrPudhAaW" name="_c0" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="rxzNqzNIuvOv" name="_c1" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="raQ8JEr1OLND" name="_c2" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="rwSlpofgP5pg" name="C2">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="Jehg03rjGg7e" name="_c2" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="52uPxUYmOyYE" name="C2">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="nBuAGhoYMWCK" type="Y8tF0tVj9bXC" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="X33nkASnDKB8" name="Entrada" comment="Input the atribut values."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="mjuBhQPSbHas" name="Saida" comment="Ouput the function."/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="VIyMt1qmVyLs" name="CFuncao" comment="Representa uma fun��o gen�rica.&#10;@class CFuncao">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="qb91vK9g12pg" name="y" comment="&lt; Representa vari�vel dependente." visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SC72ThsS4Glv" name="x" comment="&lt; Representa vari�vel independente." visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="qOJR4Tnt4wuy" name="CFuncao"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="E2eF2RvSd2U6" name="f" isAbstract="true" comment="Calcula valor da fun��o na posi��o x, isto �, y = f(x);.&#10;@return double&#10;@param  _x">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="OdcRZXPlX10Z" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="iMXkcIeQhvsl" name="_x" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="St13uW9aqeIT" name="operator ( )">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="T2cy3cXTUWWO" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="xwrcshLEKyfr" name="_x" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="0ewrIEID99pz" name="Y">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="p9D97r1YtdWx" name="_y" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="E1QiXv4YZ0Np" name="Y">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="Ed3LkqKZzYj4" type="Y8tF0tVj9bXC" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="PkaIL6DZ7cHd" name="X">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="XL96JWtW9wrr" type="Y8tF0tVj9bXC" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="lCRkiAn7sNND" name="Entrada" isAbstract="true" comment="Input the atribut values."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="SbnXD2AkMJof" name="Saida" isAbstract="true" comment="Ouput the function."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="quTanmeqxdru" name="Nome">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="rERZjC9FdCO6" type="lgHfS4izsb3W" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="Lq0DELOewBB7" name="CFunExp" comment="Representa funcao exponencial,  y = a*exp(b*x).&#10;@class CFunExp">
+        <generalization xmi:type="uml:Generalization" xmi:id="EMpadbDRHNLt" general="VIyMt1qmVyLs"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="d1iCDHXw6RLM" general="VIyMt1qmVyLs"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="ko3Vf8L2MJ9S" general="S6SKDsAwZRZ1"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="LPtpw2w4MUU1" name="CFunExp"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="Lk2KFac1YVtq" name="f" comment="Calcula valor da fun��o exponencial na posi��o x,  y = a*exp(b*x).&#10;@return double&#10;@param  _x">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="JLsdnKe75gRI" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="C7r9JXQcuJPo" name="_x" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="E1HmUAahFSoY" name="f">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="v6ZlXzMJ06Ai" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="xE8pVYdnrTQd" name="_x" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="o3krh99w9Ogd" name="_a" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="YHInj4JgIPTm" name="_b" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="4jDoKbvPNk7T" name="Entrada" comment="Input the atribut values."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="n8MQ0STxlnde" name="Saida" comment="Ouput the function."/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="00bLijpVp9vo" name="CIntegral" comment="Representa m�todo num�rico para c�lculo �rea fun��es.&#10;@class CIntegral">
+        <generalization xmi:type="uml:Generalization" xmi:id="u6IHEpwVbPeel" general="AJ8ohRhIzQS5"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ZMlKAMyO6UhM" name="limInf" comment="&lt; Limite Inferior do intervalo de integral" visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="gtcYIhlGfKbN" name="limSup" comment="&lt; Limite Inferior do intervalo de integral" visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="1Qqralf97OUH" name="dx" comment="&lt; Intervalo dx" visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="iQeovL8ZEl5W" name="numInt" comment="&lt; Numero intervalos, numero pontos" visibility="protected" type="H5FyjgVD46HL"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Qok39MQ8mGxM" name="area" comment="&lt; Valor da �rea calculada" visibility="protected" type="Y8tF0tVj9bXC"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="zcU4ywKhMyTF" name="CIntegral"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="JcmWLs0lglon" name="CIntegral">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="cl5whXAz9wVU" name="integral" visibility="private" type="7CutQrENSgRO" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="mVDTGzEL98DZ" name="Area" isAbstract="true" comment="Calcula �rea da fun��o no intervalo limInf-&gt;limSup considerando numInt.&#10;@return double&#10;@param  funcao">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="86KHEXoAwia1" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="PljWgEySkBty" name="funcao" visibility="private" type="yRuQ5Lof5sbk" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="1Ng6DFrazY6d" name="LimInf">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="n45VDxTL3lcF" name="_limInf" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="IQQC6yB7LrCY" name="LimInf">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="5182ZCfMGkpT" type="Y8tF0tVj9bXC" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="fJmi2OyLmOXs" name="LimSup">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="Mj0gYACbBJdk" name="_limSup" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="VG5kzuBeByNE" name="LimSup">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="KLX7h2x1jvhG" type="Y8tF0tVj9bXC" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="5srGBTzgj2Oi" name="Dx">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uaN6WiIq3nxi" name="_dx" visibility="private" type="Y8tF0tVj9bXC" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ptjZoPpuHe8S" name="Dx">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="756p7TX03s6Z" type="Y8tF0tVj9bXC" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="aMPb9LJyC1V0" name="NumInt">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="QIsfx1726BrC" name="_numInt" visibility="private" type="H5FyjgVD46HL" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ePCfFGEqacRj" name="NumInt">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="vjf7k95ARypO" type="H5FyjgVD46HL" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="xuR33IDgfNLv" name="Entrada" comment="Input the atribut values."/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="6GWAzRNnLoN7" name="Nome">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="a2vVdkOTzp2g" type="lgHfS4izsb3W" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="fBj69WT6Qu8S" name="CIntSimpson" comment="Representa m�todo num�rico simpson para c�lculo �rea fun��es.&#10;@class CIntSimpson">
+        <generalization xmi:type="uml:Generalization" xmi:id="aK6SqC1VOlcV" general="AJ8ohRhIzQS5"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="x7untm1SMvWT" general="AJ8ohRhIzQS5"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="uQbnNmEGlfLc8" general="AJ8ohRhIzQS5"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="z01Njdr1gRhb" name="CIntSimpson"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="9nh81Yng7kH5" name="CIntSimpson">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="70cmnZKmYM8H" name="integral" visibility="private" type="7CutQrENSgRO" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="xzIcOxDXksdj" name="Area" comment="Calcula �rea da fun��o no intervalo limInf-&gt;limSup considerando numInt.&#10;@return double&#10;@param  funcao">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="fIDDcJTYGjAe" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="PQQU8hXDf80S" name="funcao" visibility="private" type="yRuQ5Lof5sbk" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="AJ8ohRhIzQS5" name="CIntTrapezio" comment="Representa m�todo num�rico trap�sio para c�lculo �rea fun��es.&#10;@class CIntTrapezio">
+        <generalization xmi:type="uml:Generalization" xmi:id="CYTsgRIMjTZM" general="00bLijpVp9vo"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="ANyyKwn0M1HR" general="00bLijpVp9vo"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="uiyWK0rm5HTxh" general="00bLijpVp9vo"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="mpiWHGq1Gi20" name="CIntTrapezio"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ieP3OEbuBhXe" name="Area" comment="Calcula �rea da fun��o no intervalo limInf-&gt;limSup considerando numInt.&#10;@return double&#10;@param  funcao">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ory2Zy1HcQJy" type="Y8tF0tVj9bXC" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="pRLVnsrZfY3w" name="funcao" visibility="private" type="yRuQ5Lof5sbk" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="bj7GH9B3075Y" name="CSimulador">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="54nfT6e50UrY" name="CSimulador"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="sHwd2oDdVIsm" name="~ CSimulador"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="R1nQ8qyBvlqO" name="ExecutarSimulacao" comment="Executa a simula��o.">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="sSRqvJOlaJOd" type="H5FyjgVD46HL" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="fQyyPvIaXJcs" name="integral">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="jFy3LNiauASr" name="" type="bj7GH9B3075Y" multiplicity="1" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="LV7zEBztbvpy" name="" type="00bLijpVp9vo" multiplicity="1..*" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="o6YLP8B6M9Af" name="funcao">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="VqFPzgFK9MJN" name="" type="bj7GH9B3075Y" multiplicity="1" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="XHF6A25z8bKW" name="" type="VIyMt1qmVyLs" multiplicity="1..*" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="iUc4bkh6ZvWY" name="main"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="PjYVLr11Lc3u" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="Kk1tfVRGEIyJ" name="" type="bj7GH9B3075Y" aggregation="none" isNavigable="true" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="S6vpQZOnJvJc" name="" type="iUc4bkh6ZvWY" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="2Sbxspbb4Wd9" name="vector&lt;CFuncao*&gt;"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="zlXwPs0RLbMD" name="vector&lt;CIntegral*&gt;"/>
+      <xmi:Extension extender="umbrello">
+        <diagrams>
+          <diagram xmi.id="BxblZsFr8qnu" name="DiagramaDeClasse" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#ff0000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="1" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="102" canvasheight="757.3" canvaswidth="1024.4" isopen="1">
+            <widgets>
+              <classwidget xmi.id="bj7GH9B3075Y" localid="GXUsxB4Hfl40" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="426.624" y="172.746" width="171" height="81" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="Lq0DELOewBB7" localid="cRez3EhgrjOd" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="408.401" y="368.572" width="298" height="117" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="VIyMt1qmVyLs" localid="1V9f8kF6Neaj" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="84.3303" y="97.5788" width="215" height="216" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="S6SKDsAwZRZ1" localid="fc2io6arWLio" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="41.1765" y="342.507" width="310" height="216" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="DXUaHO2CK3t2" localid="aVIuYylZSuCa" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="80.6422" y="595.273" width="389" height="162" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="fBj69WT6Qu8S" localid="MUjoNtMzJyxM" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="699.671" y="495.863" width="267" height="81" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="00bLijpVp9vo" localid="nzSJIA7reQjC" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="745.615" y="50" width="245" height="342" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="iUc4bkh6ZvWY" localid="blsk5A7cPMgZ" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="495.231" y="93.8638" width="44" height="36" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <notewidget xmi.id="TYKhoJ0ENt3l" localid="mKd5ugzFQy66" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="536.334" y="608.542" width="265" height="90" isinstance="0" showstereotype="1" text="Diagrama de classes.&#10;Hierarquia CFuncao e CIntegral.&#10;Note que novas classes funções e integral &#10;podem ser adicionadas.&#10;" noteType="0"/>
+              <classwidget xmi.id="AJ8ohRhIzQS5" localid="De32LPf8M8Rf" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="803.445" y="413.613" width="221" height="63" isinstance="0" showstereotype="1" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="uiyWK0rm5HTxh" localid="uxyMw4Xd0OlZZ" textcolor="none" linecolor="#ff0000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="AJ8ohRhIzQS5" widgetbid="00bLijpVp9vo" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="907.503" starty="413.613"/>
+                  <endpoint endx="903.084" endy="392"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="umRNHMeLsDBzZ" localid="urfv6coD1zZDC" textcolor="none" linecolor="#ff0000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="S6SKDsAwZRZ1" widgetbid="VIyMt1qmVyLs" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="194.26" starty="342.507"/>
+                  <endpoint endx="193.747" endy="313.579"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="rp5ZDcL6rCqe" localid="uNlu1nKLgOSHS" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffff00" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="DXUaHO2CK3t2" widgetbid="S6SKDsAwZRZ1" indexa="1" totalcounta="2" indexb="1" totalcountb="2">
+                <linepath layout="Polyline">
+                  <startpoint startx="246.811" starty="595.273"/>
+                  <endpoint endx="233.951" endy="558.507"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uQbnNmEGlfLc8" localid="urq7ooT43NeNc" textcolor="none" linecolor="#ff0000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="fBj69WT6Qu8S" widgetbid="AJ8ohRhIzQS5" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="869.021" starty="495.863"/>
+                  <endpoint endx="886.061" endy="476.613"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="fQyyPvIaXJcs" localid="uIAuZSRqd7lLH" textcolor="#000000" linecolor="#ff0000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffff00" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="bj7GH9B3075Y" widgetbid="00bLijpVp9vo" indexa="1" totalcounta="2" indexb="1" totalcountb="2">
+                <floatingtext xmi.id="hIKtY6GsPnNl" localid="uAnIKKmuJFho" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="600" y="225.541" width="15" height="22" isinstance="0" showstereotype="1" text="1" pretext="" posttext="" role="701"/>
+                <floatingtext xmi.id="5zUOCCAuSUn0" localid="8Hh03CzvKmDc" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="715" y="208.541" width="30" height="22" isinstance="0" showstereotype="1" text="1..*" pretext="" posttext="" role="702"/>
+                <floatingtext xmi.id="MJYVOLuxsmV0" localid="Z0TnVUcYEGoN" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="638.051" y="259.428" width="60" height="22" isinstance="0" showstereotype="1" text="integral" pretext="" posttext="" role="703"/>
+                <linepath layout="Polyline">
+                  <startpoint startx="597.624" starty="215.108"/>
+                  <endpoint endx="745.615" endy="218.332"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="o6YLP8B6M9Af" localid="u8CabiBM5up49" textcolor="#000000" linecolor="#ff0000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffff00" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="bj7GH9B3075Y" widgetbid="VIyMt1qmVyLs" indexa="1" totalcounta="2" indexb="1" totalcountb="2">
+                <floatingtext xmi.id="iIXk6NTzGW3p" localid="07afGVlU0aG7" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="404" y="208.541" width="15" height="22" isinstance="0" showstereotype="1" text="1" pretext="" posttext="" role="701"/>
+                <floatingtext xmi.id="ZYrZ88fpQCXW" localid="5jdGB6XBB5pP" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="286" y="213.541" width="30" height="22" isinstance="0" showstereotype="1" text="1..*" pretext="" posttext="" role="702"/>
+                <floatingtext xmi.id="tt36baioBTSJ" localid="FXqo781S1qpl" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="339.525" y="233.869" width="53" height="22" isinstance="0" showstereotype="1" text="funcao" pretext="" posttext="" role="703"/>
+                <linepath layout="Polyline">
+                  <startpoint startx="426.624" starty="211.199"/>
+                  <endpoint endx="299.33" endy="208.152"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="PjYVLr11Lc3u" localid="uoSMwZXS8dqhT" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffff00" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="503" widgetaid="bj7GH9B3075Y" widgetbid="iUc4bkh6ZvWY" indexa="1" totalcounta="2" indexb="1" totalcountb="2">
+                <linepath layout="Polyline">
+                  <startpoint startx="516.324" starty="129.864"/>
+                  <endpoint endx="514.164" endy="172.746"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="ko3Vf8L2MJ9S" localid="ueBdiQJ3x4Agx" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffff00" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="500" widgetaid="Lq0DELOewBB7" widgetbid="S6SKDsAwZRZ1" indexa="1" totalcounta="2" indexb="1" totalcountb="2">
+                <linepath layout="Polyline">
+                  <startpoint startx="408.401" starty="437.099"/>
+                  <endpoint endx="377.176" endy="439.2"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+          <diagram xmi.id="TPZmKsO4Az93" name="DiagramaDeSequencia" type="3" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#ff0000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="1" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="111" canvasheight="523.2" canvaswidth="1064.1" isopen="1" autoincrementsequence="1">
+            <widgets>
+              <objectwidget xmi.id="bj7GH9B3075Y" localid="G2buAwA7fh34" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="329.054" y="80" width="91" height="28" isinstance="0" showstereotype="1" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="zlXwPs0RLbMD" localid="QynTUOctpIeb" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="865.054" y="80" width="184" height="28" isinstance="0" instancename="integral" showstereotype="1" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="iUc4bkh6ZvWY" localid="jFu46vpZLMJf" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="170.054" y="80" width="51" height="28" isinstance="0" showstereotype="1" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="2Sbxspbb4Wd9" localid="RRgmn0Q0d8LI" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="577.162" y="80" width="175" height="28" isinstance="0" instancename="funcao" showstereotype="1" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="00bLijpVp9vo" localid="EfkNerQHygL4" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="775.36" y="80" width="77" height="28" isinstance="0" showstereotype="1" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="VIyMt1qmVyLs" localid="f7I35O7ZuSEg" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="490.471" y="80" width="73" height="28" isinstance="0" showstereotype="1" drawasactor="0" multipleinstance="0" decon="0"/>
+              <notewidget xmi.id="BI17tYOUyT0r" localid="yChZA6ndRdMy" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="56" y="175.216" width="284" height="46" isinstance="0" showstereotype="1" text="Criar funções e adiciona ao vetor de funções." noteType="0"/>
+              <notewidget xmi.id="9zfCj9YuIxRw" localid="UxbVzxWTXK1J" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="56" y="230.216" width="197" height="44" isinstance="0" showstereotype="1" text="Entrada de dados das funções." noteType="0"/>
+              <notewidget xmi.id="yxuTHwkPtPZc" localid="2k7MWYS0U1TT" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="57" y="322.216" width="217" height="45" isinstance="0" showstereotype="1" text="Criar integrais e adiciona ao vetor." noteType="0"/>
+              <notewidget xmi.id="M42A3fzt1sN9" localid="HWhkeuVgrdbB" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="60" y="384.216" width="202" height="41" isinstance="0" showstereotype="1" text="Entrada de dados das integrais." noteType="0"/>
+              <notewidget xmi.id="Ihv1L7XWwjh3" localid="zFoGnVINL5ei" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="50" y="448.216" width="362" height="75" isinstance="0" showstereotype="1" text="Calcula integral (trapézio e simpson)  das funções criadas." noteType="0"/>
+              <notewidget xmi.id="xDEIIqzaXubt" localid="z68Cjqfg5Tur" textcolor="#000000" linecolor="none" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffff" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="849.757" y="458.108" width="160" height="50" isinstance="0" showstereotype="1" text="Diagrama de sequência." noteType="0"/>
+            </widgets>
+            <messages>
+              <messagewidget xmi.id="Sttw0Q7y9BJj" localid="8luQYCjyTuNa" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="375" y="258" width="150" height="8" isinstance="0" showstereotype="1" seqnum="" widgetaid="G2buAwA7fh34" widgetbid="f7I35O7ZuSEg" operation="funcao[i].Entrada()" sequencemessagetype="1001" textid="hiH8ccg3VXxV">
+                <floatingtext xmi.id="hiH8ccg3VXxV" localid="xa6sU4dcpV0L" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="384" y="236" width="121" height="22" isinstance="0" showstereotype="1" text="funcao[i].Entrada()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="ZzyTaKgTqOKc" localid="Ov6qEPSsPtAd" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="375" y="195" width="288" height="8" isinstance="0" showstereotype="1" seqnum="" widgetaid="G2buAwA7fh34" widgetbid="RRgmn0Q0d8LI" operation="push_back(CFuncao*)" sequencemessagetype="1001" textid="XcLwVWY5TWW3">
+                <floatingtext xmi.id="XcLwVWY5TWW3" localid="U7LlyM2LH8BT" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="384" y="173" width="140" height="22" isinstance="0" showstereotype="1" text="push_back(CFuncao*)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="Recb3TIGa0OG" localid="WPgUM3xowRiN" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="375" y="354.901" width="581" height="20" isinstance="0" showstereotype="1" seqnum="" widgetaid="G2buAwA7fh34" widgetbid="QynTUOctpIeb" operation="push_back(CIntegral*)" sequencemessagetype="1001" textid="bS5XtlvKOVtR">
+                <floatingtext xmi.id="bS5XtlvKOVtR" localid="SNqlYZw3waXJ" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="641" y="332" width="144" height="22" isinstance="0" showstereotype="1" text="push_back(CIntegral*)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="zcU4ywKhMyTF" localid="pAUfYpF1uYmt" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="375" y="322.433" width="437" height="8" isinstance="0" showstereotype="1" seqnum="" widgetaid="G2buAwA7fh34" widgetbid="EfkNerQHygL4" operation="zcU4ywKhMyTF" sequencemessagetype="1001" textid="D7i8fUzaIBlD">
+                <floatingtext xmi.id="D7i8fUzaIBlD" localid="TvWuR0wGAQtj" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="674" y="300" width="72" height="22" isinstance="0" showstereotype="1" text="CIntegral()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="qOJR4Tnt4wuy" localid="3V7qjYmq9nbP" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="375" y="159" width="150" height="8" isinstance="0" showstereotype="1" seqnum="" widgetaid="G2buAwA7fh34" widgetbid="f7I35O7ZuSEg" operation="qOJR4Tnt4wuy" sequencemessagetype="1001" textid="riqyVPONpcKU">
+                <floatingtext xmi.id="riqyVPONpcKU" localid="Xr0i7pEALJy2" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="417" y="137" width="68" height="22" isinstance="0" showstereotype="1" text="CFuncao()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="R1nQ8qyBvlqO" localid="Y1Vtcq41orSG" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="196" y="139" width="177" height="8" isinstance="0" showstereotype="1" seqnum="" widgetaid="jFu46vpZLMJf" widgetbid="G2buAwA7fh34" operation="R1nQ8qyBvlqO" sequencemessagetype="1001" textid="8khuZ9AnDHrW">
+                <floatingtext xmi.id="8khuZ9AnDHrW" localid="9b3mI6oo8Ihi" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="203" y="117" width="157" height="22" isinstance="0" showstereotype="1" text="ExecutarSimulacao() : int" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="weOl9N4o5Juh" localid="x2U4DloAJu3m" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="375" y="392" width="437" height="8" isinstance="0" showstereotype="1" seqnum="" widgetaid="G2buAwA7fh34" widgetbid="EfkNerQHygL4" operation="integral[i].Entrada()" sequencemessagetype="1001" textid="5w2Oo3AkhXTo">
+                <floatingtext xmi.id="5w2Oo3AkhXTo" localid="vaiO8et3gL8u" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="616" y="370" width="126" height="22" isinstance="0" showstereotype="1" text="integral[i].Entrada()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="zwEdIMXLGYh4" localid="uVcxoUch5L5D" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="375" y="440" width="437" height="8" isinstance="0" showstereotype="1" seqnum="" widgetaid="G2buAwA7fh34" widgetbid="EfkNerQHygL4" operation="integral[i].Area(Funcao[j])" sequencemessagetype="1001" textid="AoDD7IO6DdkT">
+                <floatingtext xmi.id="AoDD7IO6DdkT" localid="bsmHNF5FkgCW" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="578" y="418" width="163" height="22" isinstance="0" showstereotype="1" text="integral[i].Area(Funcao[j])" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="yCrW99yIktJ6" localid="bV8Ft2hSg3si" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="375" y="287" width="150" height="8" isinstance="0" showstereotype="1" seqnum="" widgetaid="G2buAwA7fh34" widgetbid="f7I35O7ZuSEg" operation="funcao[i].Saida()" sequencemessagetype="1001" textid="VR3BUtrQ6jwD">
+                <floatingtext xmi.id="VR3BUtrQ6jwD" localid="2Az3zEPYjVlc" textcolor="none" linecolor="none" linewidth="none" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="Sans Serif,10,-1,5,50,0,0,0,0,0" autoresize="1" x="402" y="265" width="106" height="22" isinstance="0" showstereotype="1" text="funcao[i].Saida()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+            </messages>
+            <associations/>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use Case View" name="Use Case View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component View" name="Component View" stereotype="folder">
+      <packagedElement xmi:type="uml:Artifact" xmi:id="sU8bNKTXf084" name="CFun1G.h" comment="/************************************************************************&#10;                        CFun1G.h - Copyright André D. Bueno&#10;&#10;Exemplo did�tico para ensino de C++ para alunos do LENEP/CCT/UENF.&#10;Implementa��o de uma pequena biblioteca de classes para fun��es e &#10;c�lculo de integral num�rica.&#10;**************************************************************************/" drawas="1"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="tErkpZ1mKhvv" name="CFun2G.h" comment="/************************************************************************&#10;                        CFun2G.h - Copyright André D. Bueno&#10;&#10;Exemplo did�tico para ensino de C++ para alunos do LENEP/CCT/UENF.&#10;Implementa��o de uma pequena biblioteca de classes para fun��es e &#10;c�lculo de integral num�rica.&#10;**************************************************************************/" drawas="1"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="zNOLtafOdgBN" name="CFuncao.h" comment="/************************************************************************&#10;                        CFuncao.h - Copyright André D. Bueno&#10;&#10;Exemplo did�tico para ensino de C++ para alunos do LENEP/CCT/UENF.&#10;Implementa��o de uma pequena biblioteca de classes para fun��es e &#10;c�lculo de integral num�rica.&#10;**************************************************************************/" drawas="1"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="nh9uc1mNBD5t" name="CFunExp.h" comment="/************************************************************************&#10;                        CFunExp.h - Copyright André D. Bueno&#10;&#10;Exemplo did�tico para ensino de C++ para alunos do LENEP/CCT/UENF.&#10;Implementa��o de uma pequena biblioteca de classes para fun��es e &#10;c�lculo de integral num�rica.&#10;**************************************************************************/" drawas="1"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="ElYJGBDIsP4C" name="CIntegral.h" comment="/************************************************************************&#10;                        CIntegral.h - Copyright André D. Bueno&#10;&#10;Exemplo did�tico para ensino de C++ para alunos do LENEP/CCT/UENF.&#10;Implementa��o de uma pequena biblioteca de classes para fun��es e &#10;c�lculo de integral num�rica.&#10;**************************************************************************/" drawas="1"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="bYjB8As1tY6b" name="CIntSimpson.h" comment="/************************************************************************&#10;                        CIntTrapezio.h - Copyright André D. Bueno&#10;Exemplo did�tico para ensino de C++ para alunos do LENEP/CCT/UENF.&#10;Implementa��o de uma pequena biblioteca de classes para fun��es e &#10;c�lculo de integral num�rica.&#10;**************************************************************************/" drawas="1"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="hL9PCk9bBX3H" name="CIntTrapezio.h" comment="/************************************************************************&#10;                        CIntTrapezio.h - Copyright André D. Bueno&#10;Exemplo did�tico para ensino de C++ para alunos do LENEP/CCT/UENF.&#10;Implementa��o de uma pequena biblioteca de classes para fun��es e &#10;c�lculo de integral num�rica.&#10;**************************************************************************/" drawas="1"/>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="cusoZNSOnlra" name="CSimulador.h" comment="/************************************************************************&#10;                        CSimulador.h - Copyright André D. Bueno&#10;Exemplo did�tico para ensino de C++ para alunos do LENEP/CCT/UENF.&#10;Implementa��o de uma pequena biblioteca de classes para fun��es e &#10;c�lculo de integral num�rica.&#10;**************************************************************************/" drawas="1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment View" name="Deployment View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity Relationship Model" name="Entity Relationship Model" stereotype="folder"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="BxblZsFr8qnu" documentation="" uniqueid="u3NH2nw2X6Ccj"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Entity Relationship Model" type="836" open="1"/>
+        <listitem id="Deployment View" type="827" open="1"/>
+        <listitem id="Use Case View" type="802" open="1"/>
+        <listitem id="Component View" type="821" open="0">
+          <listitem id="sU8bNKTXf084" type="824" open="0"/>
+          <listitem id="tErkpZ1mKhvv" type="824" open="0"/>
+          <listitem id="zNOLtafOdgBN" type="824" open="0"/>
+          <listitem id="nh9uc1mNBD5t" type="824" open="0"/>
+          <listitem id="ElYJGBDIsP4C" type="824" open="0"/>
+          <listitem id="bYjB8As1tY6b" type="824" open="0"/>
+          <listitem id="hL9PCk9bBX3H" type="824" open="0"/>
+          <listitem id="cusoZNSOnlra" type="824" open="0"/>
+        </listitem>
+        <listitem id="Logical View" type="801" open="1">
+          <listitem id="S6SKDsAwZRZ1" type="813" open="0">
+            <listitem id="vqJVFqIUYzHf" type="814" open="0"/>
+            <listitem id="stsekrTPXOLW" type="815" open="0"/>
+            <listitem id="kk4twpHog7QQ" type="815" open="0"/>
+            <listitem id="I4HroCIYyUoh" type="814" open="0"/>
+            <listitem id="UbpFUV7CDC59" type="815" open="0"/>
+            <listitem id="xq9N7C1ZnpoH" type="815" open="0"/>
+            <listitem id="0rhHKYLFOeib" type="815" open="0"/>
+            <listitem id="wng9bYcZMlwU" type="815" open="0"/>
+            <listitem id="EAmZ3qh7EN95" type="815" open="0"/>
+            <listitem id="T04z0JeGLt69" type="815" open="0"/>
+            <listitem id="vv1ikoy3kQZo" type="815" open="0"/>
+          </listitem>
+          <listitem id="DXUaHO2CK3t2" type="813" open="0">
+            <listitem id="s8GhI5M2uk5R" type="814" open="0"/>
+            <listitem id="rwSlpofgP5pg" type="815" open="0"/>
+            <listitem id="52uPxUYmOyYE" type="815" open="0"/>
+            <listitem id="249sWRwMlBW8" type="815" open="0"/>
+            <listitem id="X33nkASnDKB8" type="815" open="0"/>
+            <listitem id="mIIwrjPTVtz0" type="815" open="0"/>
+            <listitem id="HgLCu6MlCbSS" type="815" open="0"/>
+            <listitem id="mjuBhQPSbHas" type="815" open="0"/>
+          </listitem>
+          <listitem id="VIyMt1qmVyLs" type="813" open="0">
+            <listitem id="qOJR4Tnt4wuy" type="815" open="0"/>
+            <listitem id="lCRkiAn7sNND" type="815" open="0"/>
+            <listitem id="E2eF2RvSd2U6" type="815" open="0"/>
+            <listitem id="quTanmeqxdru" type="815" open="0"/>
+            <listitem id="St13uW9aqeIT" type="815" open="0"/>
+            <listitem id="SbnXD2AkMJof" type="815" open="0"/>
+            <listitem id="SC72ThsS4Glv" type="814" open="0"/>
+            <listitem id="PkaIL6DZ7cHd" type="815" open="0"/>
+            <listitem id="qb91vK9g12pg" type="814" open="0"/>
+            <listitem id="0ewrIEID99pz" type="815" open="0"/>
+            <listitem id="E1QiXv4YZ0Np" type="815" open="0"/>
+          </listitem>
+          <listitem id="Lq0DELOewBB7" type="813" open="0">
+            <listitem id="LPtpw2w4MUU1" type="815" open="0"/>
+            <listitem id="4jDoKbvPNk7T" type="815" open="0"/>
+            <listitem id="E1HmUAahFSoY" type="815" open="0"/>
+            <listitem id="Lk2KFac1YVtq" type="815" open="0"/>
+            <listitem id="n8MQ0STxlnde" type="815" open="0"/>
+          </listitem>
+          <listitem id="00bLijpVp9vo" type="813" open="0">
+            <listitem id="Qok39MQ8mGxM" type="814" open="0"/>
+            <listitem id="mVDTGzEL98DZ" type="815" open="0"/>
+            <listitem id="zcU4ywKhMyTF" type="815" open="0"/>
+            <listitem id="JcmWLs0lglon" type="815" open="0"/>
+            <listitem id="1Qqralf97OUH" type="814" open="0"/>
+            <listitem id="5srGBTzgj2Oi" type="815" open="0"/>
+            <listitem id="ptjZoPpuHe8S" type="815" open="0"/>
+            <listitem id="xuR33IDgfNLv" type="815" open="0"/>
+            <listitem id="ZMlKAMyO6UhM" type="814" open="0"/>
+            <listitem id="1Ng6DFrazY6d" type="815" open="0"/>
+            <listitem id="IQQC6yB7LrCY" type="815" open="0"/>
+            <listitem id="gtcYIhlGfKbN" type="814" open="0"/>
+            <listitem id="fJmi2OyLmOXs" type="815" open="0"/>
+            <listitem id="VG5kzuBeByNE" type="815" open="0"/>
+            <listitem id="6GWAzRNnLoN7" type="815" open="0"/>
+            <listitem id="iQeovL8ZEl5W" type="814" open="0"/>
+            <listitem id="aMPb9LJyC1V0" type="815" open="0"/>
+            <listitem id="ePCfFGEqacRj" type="815" open="0"/>
+          </listitem>
+          <listitem id="fBj69WT6Qu8S" type="813" open="0">
+            <listitem id="xzIcOxDXksdj" type="815" open="0"/>
+            <listitem id="z01Njdr1gRhb" type="815" open="0"/>
+            <listitem id="9nh81Yng7kH5" type="815" open="0"/>
+          </listitem>
+          <listitem id="AJ8ohRhIzQS5" type="813" open="0">
+            <listitem id="ieP3OEbuBhXe" type="815" open="0"/>
+            <listitem id="mpiWHGq1Gi20" type="815" open="0"/>
+          </listitem>
+          <listitem id="bj7GH9B3075Y" type="813" open="0">
+            <listitem id="sHwd2oDdVIsm" type="815" open="0"/>
+            <listitem id="54nfT6e50UrY" type="815" open="0"/>
+            <listitem id="R1nQ8qyBvlqO" type="815" open="0"/>
+          </listitem>
+          <listitem id="BxblZsFr8qnu" type="807" label="DiagramaDeClasse" open="0"/>
+          <listitem id="TPZmKsO4Az93" type="810" label="DiagramaDeSequencia" open="0"/>
+          <listitem id="iUc4bkh6ZvWY" type="813" open="1"/>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="iF8q5tiKwxIf" type="829" open="1"/>
+            <listitem id="yRuQ5Lof5sbk" type="829" open="0"/>
+            <listitem id="7CutQrENSgRO" type="829" open="0"/>
+            <listitem id="Y8tF0tVj9bXC" type="829" open="1"/>
+            <listitem id="cltes8z5amrf" type="829" open="1"/>
+            <listitem id="zPSZBJChR5uP" type="829" open="1"/>
+            <listitem id="uOeXxtYfiasq0" type="829" open="0"/>
+            <listitem id="u1I7ivhrCW8QU" type="829" open="0"/>
+            <listitem id="SGXMDn2nXtSP" type="829" open="1"/>
+            <listitem id="uLRORgMmo9nXy" type="829" open="0"/>
+            <listitem id="uOQW1lltylFza" type="829" open="0"/>
+            <listitem id="uzlfaitrIJFG4" type="829" open="0"/>
+            <listitem id="uhfXfy8K51buI" type="829" open="0"/>
+            <listitem id="u4VcmU1QF5B6E" type="829" open="0"/>
+            <listitem id="lgHfS4izsb3W" type="829" open="1"/>
+            <listitem id="utATxymiHKv1K" type="829" open="0"/>
+            <listitem id="xQ86zeGSulo5" type="829" open="1"/>
+            <listitem id="CNZbRU0Os7Sr" type="829" open="1"/>
+            <listitem id="uvwf3K7pVcdla" type="829" open="0"/>
+            <listitem id="Zot6fJTeitBs" type="829" open="1"/>
+            <listitem id="uMIhod0RzVUfC" type="829" open="0"/>
+            <listitem id="uCZA67eEJSqPE" type="829" open="0"/>
+          </listitem>
+          <listitem id="2Sbxspbb4Wd9" type="813" open="1"/>
+          <listitem id="zlXwPs0RLbMD" type="813" open="1"/>
+        </listitem>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="C++"/>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>

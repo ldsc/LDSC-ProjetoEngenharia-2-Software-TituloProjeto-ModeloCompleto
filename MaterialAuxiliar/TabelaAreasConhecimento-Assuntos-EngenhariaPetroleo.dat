@@ -1,0 +1,174 @@
+Tabela de Áreas do Conhecimento
+1.00.00.00-3    Ciências Exatas e da Terra
+1.01.00.00-8    Matemática
+1.01.01.00-4    Álgebra
+1.01.01.01-2    Conjuntos
+1.01.01.02-0    Lógica Matemática
+1.01.02.00-0    Análise
+1.01.02.04-3    Equações Diferênciais Ordinárias
+1.01.02.05-1    Equações Diferênciais Parciais
+1.01.03.04-0    Sistemas Dinâmicos
+1.01.04.00-3    Matemática Aplicada
+1.01.04.01-1    Física Matemática
+1.01.04.02-0    Análise Numérica
+1.01.04.03-8    Matemática Discreta e Combinatoria
+1.02.00.00-2    Probabilidade e Estatística
+1.02.01.00-9    Probabilidade
+1.02.01.01-7    Teoria Geral e Fundamentos da Probabilidade
+1.02.01.02-5    Teoria Geral e Processos Estocásticos
+1.02.01.03-3    Teoremas de Limite
+1.02.01.04-1    Processos Markovianos
+1.02.01.05-0    Análise Estocástica
+1.02.02.00-5    Estatística
+1.02.02.01-3    Fundamentos da Estatística
+1.02.02.02-1    Inferência Paramétrica
+1.02.02.03-0    Inferência Nao-Paramétrica
+1.02.02.04-8    Inferência em Processos Estocásticos
+1.02.02.05-6    Análise Multivariada
+1.02.02.06-4    Regressão e Correlação
+1.02.02.07-2    Planejamento de Experimentos
+1.02.02.08-0    Análise de Dados
+1.02.03.00-1    Probabilidade e Estatística Aplicadas
+1.03.00.00-7    Ciência da Computação
+1.03.01.03-8    Análise de Algoritmos e Complexidade de Computação
+1.03.01.04-6    Lógicas e Semântica de Programas
+1.03.02.02-6    Modelos Analíticos e de Simulação
+1.03.03.00-6    Metodologia e Técnicas da Computação
+1.03.03.01-4    Linguagens de Programação
+1.03.03.02-2    Engenharia de Software
+1.03.03.03-0    Banco de Dados
+1.03.03.04-9    Sistemas de Informação
+1.03.03.05-7    Processamento Gráfico (Graphics)
+1.03.04.00-2    Sistemas de Computação
+1.03.04.01-0    Hardware
+1.03.04.02-9    Arquitetura de Sistemas de Computação
+1.05.00.00-6    Física
+1.05.01.00-2    Física Geral
+1.05.01.01-0    Métodos Matemáticos da Física
+1.05.01.02-9    Física Clássica e Física Quântica; Mecânica e Campos
+1.05.01.03-7    Relatividade e Gravitação
+1.05.01.04-5    Física Estatística e Termodinâmica
+1.05.01.05-3    Metrologia, Técnicas Gerais de Laboratório, Sistema de Instrumentação
+1.05.02.00-9    Áreas Clássicas de Fenomenologia e suas Aplicações
+1.05.02.01-7    Eletricidade e Magnetismo; Campos e Partículas Carregadas
+1.05.02.02-5    Ótica
+1.05.02.03-3    Acústica
+1.05.02.04-1    Transferência de Calor; Processos Térmicos e Termodinâmicos
+1.05.02.05-0    Mecânica, Elasticidade e Reologia
+1.05.02.06-8    Dinâmica dos Fluidos
+1.05.06.00-4    Física dos Fluidos, Física de Plasmas e Descargas Elétricas
+1.05.06.01-2    Cinética e Teoria de Transporte de Fluidos; Propriedades Físicas de Gases
+1.05.07.01-9    Estrutura de Líquidos e Sólidos; Cristalografia
+1.05.07.04-3    Equação de Estado, Equilíbrio de Fases e Transições de Fase
+1.05.07.08-6    Superfícies e Interfaces; Películas e Filamentos
+1.05.07.11-6    Estruturas Eletrônicas e Propriedades Elétricas de Superfícies Interfaces e Películas
+1.05.07.13-2    Materiais Magnéticos e Propriedades Magnéticas
+1.05.07.14-0    Ressonância Mag.e Relax.Na Mat.Condens;Efeitos Mosbauer;Corr.Ang.Pertubada
+1.05.07.15-9    Materiais Dielétricos e Propriedades Dielétricas
+1.05.07.16-7    Prop.Óticas e Espectrosc.da Mat.Condens;Outras Inter.da Mat.Com Rad.e Part.
+1.05.07.17-5    Emissão Eletrônica e Iônica por Líquidos e Sólidos; Fenômenos de Impacto
+1.06.00.00-0    Química
+1.06.01.00-7    Química Orgânica
+1.06.01.03-1    Fisico-Química Orgânica
+1.06.01.07-4    Polimeros e Colóides
+1.06.02.00-3    Química Inorgânica
+1.06.03.00-0    Fisico-Química
+1.06.03.01-8    Cinética Química e Catálise
+1.06.03.02-6    Eletroquímica
+1.06.03.03-4    Espectroscopia
+1.06.03.04-2    Química de Interfaces
+1.06.04.00-6    Química Analítica
+1.06.04.01-4    Separação
+1.06.04.02-2    Métodos Óticos de Análise
+1.06.04.03-0    Eletroanalítica
+1.06.04.04-9    Gravimetria
+1.06.04.05-7    Titimetria
+1.06.04.06-5    Instrumentação Analítica
+1.06.04.07-3    Análise de Traços e Química Ambiental
+1.07.00.00-5    GeoCiências
+1.07.01.00-1    Geologia
+1.07.01.01-0    Mineralogia
+1.07.01.02-8    Petrologia
+1.07.01.03-6    Geoquímica
+1.07.01.04-4    Geologia Regional
+1.07.01.05-2    Geotectônica
+1.07.01.06-0    Geocronologia
+1.07.01.08-7    Metalogenia
+1.07.01.09-5    Hidrogeologia
+1.07.01.10-9    Prospecção Mineral
+1.07.01.11-7    Sedimentologia
+1.07.01.12-5    Paleontologia Estratigráfica
+1.07.01.13-3    Estratigrafia
+1.07.01.14-1    Geologia Ambiental
+1.07.02.00-8    Geofísica
+1.07.02.01-6    Geomagnetismo
+1.07.02.02-4    Sismologia
+1.07.02.03-2    Geotermia e Fluxo Térmico
+1.07.02.04-0    Propriedades Físicas das Rochas
+1.07.02.05-9    Geofísica Nuclear
+1.07.02.08-3    Desenvolvimento de Instrumentação Geofísica
+1.07.02.09-1    Geofísica Aplicada
+1.07.02.10-5    Gravimetria
+2.00.00.00-6    Ciências Biológicas
+2.01.00.00-0    Biologia Geral
+2.05.00.00-9    Ecologia
+2.05.03.00-8    Ecologia Aplicada
+3.00.00.00-9    Engenharias
+3.02.00.00-8    Engenharia de Minas
+3.02.01.02-0    Dimensionamento de Jazidas
+3.03.04.04-0    Transformação de Fases
+3.03.04.05-9    Corrosão
+3.05.00.00-1    Engenharia Mecânica
+3.05.01.00-8    Fenômenos de Transporte
+3.05.01.01-6    Transferência de Calor
+3.05.01.02-4    Mecânica dos Fluidos
+3.05.01.03-2    Dinâmica dos Gases
+3.05.01.04-0    Principios Variacionais e Métodos Numéricos
+3.05.02.00-4    Engenharia Térmica
+3.05.02.01-2    Termodinâmica
+3.05.02.02-0    Controle Ambiental
+3.05.02.03-9    Aproveitamento da Energia
+3.05.03.00-0    Mecânica dos Sólidos
+3.05.03.03-5    Análise de Tensões
+3.05.03.04-3    Termoelasticidade
+3.05.04.02-3    Estática e Dinâmica Aplicada
+3.05.04.08-2    Aproveitamento de Energia
+3.05.05.03-8    Controle Numérico
+3.05.05.04-6    Robotização
+3.06.00.00-6    Engenharia Química
+3.06.01.00-2    Processos Industriais de Engenharia Química
+3.06.03.01-3    Balancos Globais de Matéria e Energia
+3.06.03.02-1    Água
+3.06.03.03-0    Álcool
+3.06.03.14-5    Óleos
+3.06.03.16-1    Petróleo e Petroquímica
+3.06.03.17-0    Polímeros
+3.08.00.00-5    Engenharia de Produção
+3.08.01.00-1    Gerência de Produção
+3.08.01.02-8    Planejamento, Projeto e Controle de Sistemas de Produção
+3.08.01.03-6    Higiene e Segurança do Trabalho
+3.08.02.03-2    Séries Temporais
+3.08.02.04-0    Teoria dos Grafos
+3.08.03.00-4    Engenharia do Produto
+3.08.03.02-0    Metodologia de Projeto do Produto
+3.08.03.03-9    Processos de Trabalho
+3.08.03.04-7    Gerência do Projeto e do Produto
+3.08.03.05-5    Desenvolvimento de Produto
+3.08.04.00-0    Engenharia Econômica
+3.08.04.01-9    Estudo de Mercado
+3.08.04.06-0    Avaliação de Projetos
+6.02.00.00-6    Administração
+6.02.01.00-2    Administração de Empresas
+6.02.01.01-0    Administração da Produção
+6.02.01.02-9    Administração Financeira
+6.02.01.05-3    Administração de Recursos Humanos
+6.02.02.04-1    Administração de Pessoal
+6.03.00.00-0    Economia
+6.03.01.00-7    Teoria Econômica
+6.03.01.01-5    Economia Geral
+6.03.01.02-3    Teoria Geral da Economia
+6.03.01.03-1    História do Pensamento Econômico
+6.03.01.04-0    História Econômica
+6.03.01.05-8    Sistemas Econômicos
+6.03.02.01-1    Métodos e Modelos Matemáticos, Econométricos e Estatísticos
+6.03.02.04-6    Economia Matemática

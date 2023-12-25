@@ -11,7 +11,7 @@ Note que temos subdiretórios para cada etapa do projeto completo.
 
 A vantagem de colocar as imagens em diretório geral/único é facilitar o compartilhamento de imagens.
 
-Por exemplo, uma imagem do pré-projeto poderá ser inteiramente aproveitada nos documentos sobsequentes, não sendo necessário copiar a imagem.
+Por exemplo, uma imagem do pré-projeto poderá ser inteiramente aproveitada nos documentos subsequentes, não sendo necessário copiar a imagem.
 A mesma só estará no diretório subsequente se for alterada.
 
 Então, quando for procurar uma imagem procure no diretório correspondente ao arquivo que esta manipulando, se não encontrar é porque esta num diretório de etapa anterior.

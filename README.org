@@ -1,0 +1,63 @@
+#+TITLE: ProjetoEngenharia-Titulo
+
+* Nome do Software (ou Biblioteca):
+- 
+
+* Resumo e/ou informação extra: 
+- 
+
+* Versão: 
+- 1.0.
+
+* Data:
+- 2024/2 - segundo semestre.
+  
+* Autor de Contato:
+- André Duarte Bueno <andreduartebueno@gmail.com>
+
+* Lista dos Autores:
+- ...
+- André Duarte Bueno <andreduartebueno@gmail.com>
+
+* Áreas de pesquisa vinculadas: 
+- Modelagem Matemática Computacional
+- Engenharia de Reservatório
+- ...
+
+* Vinculo com: 
+- [[https://sites.google.com/view/professorandreduartebueno/ensino/projeto-de-software-aplicado][Trabalho da disciplina Projeto de Software Aplicado à Engenharia]].
+
+* Paradigmas: 
+- POO - Programação Orientada a Objeto (códigos em C++)
+
+* Tipo de Interface: 
+- Terminal e gráfica (gnuplot).
+- Qt?
+
+* Plataformas Suportadas: 
+- Windows e GNU/Linux e Mac OS X (não testada).
+
+* Linguagens Utilizadas: 
+- C++ 23.
+
+* Bibliotecas Utilizadas (dependências):
+- CGnuplot - https://github.com/ldsc/CGnuplot
+
+* Softwares utilizados (dependências)
+- gnuplot http://www.gnuplot.info/
+
+* Tipo de Licença:
+- GPL
+* Novas Versões
+- Entre em contato com o Prof. André Duarte Bueno
+  andreduartebueno@gmail.com
+  para que o mesmo gere um novo projeto no github do ldsc para que você (e sua equipe) possam trabalhar na nova versão.
+- Se este projeto tem como número de versão 1.0 a nova versão deverá ser 2.0 e assim sucessivamente.
+- Os nomes dos autores originais deve ser preservada na nova versão, ou seja, adicione a informação do número da versão, os nomes dos membros da nova equipe, mas jamais apague os nomes dos autores originais (isto seria plágio).
+- Na descrição do projeto informe que trata-se de uma nova versão, que tem como base a versão anterior e DESTAQUE COM CLAREZA E OBJETIVIDADE QUAIS AS NOVIDADES DA NOVA VERSÃO.
+  
+* Links:
+- [[https://sites.google.com/view/professorandreduartebueno/][Site do Professor André Duarte Bueno]].
+- [[https://github.com/ldsc][Site do LDSC no github]].
+- [[https://uenf.br/cct/lenep][Site do LENEP]].
+- .

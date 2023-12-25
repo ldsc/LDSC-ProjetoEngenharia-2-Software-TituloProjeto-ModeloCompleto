@@ -1,0 +1,22 @@
+Neste diretório irá colocar os arquivos da modelagem UML de seu projeto.
+
+Coloque o arquivo do umbrello neste diretório com o nome: ProjetoEngenharia-Titulo.umbrello.xmi.
+
+Faça backup com frequência (copiar e colar).
+
+Estes backups não devem ser adicionados no repositório do git, ou seja, são arquivos que ficam apenas na sua máquina.
+
+Depois de gerar os modelos e seus diagramas exporte todos no formato .png salvando no diretório de lyx/imagens.
+
+DICA 1: Os diagramas do umbrello devem ter o seguinte padrão de nomes: NomeDoDiagrama.png, jamais coloque espaços ou acentos em nomes de arquivos.
+
+Dica 2: Depois de fazer os diagramas no umbrello vá no menu "Arquivo", selecione "Exportar diagramas como imagens", selecione "Todos diagramas", e então pressione ok.
+Em "Pasta onde salvar os diagramas" selecione a pasta "3-Execucao-ModelosDeEngenharia/lyx/imagens".
+Em tipo de imagem selecione: imagem/png.
+Em resolução selecione: 300dpi
+
+Com isso teremos todas as imagens salvas no diretório de imagens e com boa resolução.
+Não é para capturar as imagens usando "pring screen" pois ficam com baixa qualidade.
+
+
+Nota: a título de exemplo colocamos aqui arquivos do umbrello de projetos apresentados em sala de aula. Use como referência caso necessário.
