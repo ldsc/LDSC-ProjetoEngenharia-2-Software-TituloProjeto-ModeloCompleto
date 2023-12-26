@@ -91,7 +91,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style abntex2-alf
+\biblio_style apalike
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -131,6 +131,13 @@
 
 \begin_layout Standard
 \align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Base.lyx"
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap0-Capa-ProjetoDisciplina.lyx"
@@ -234,32 +241,6 @@ usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap0-Capa-ProjetoTCC.lyx"
-
-\end_inset
-
-Use esta capa se for seu TCC;
-\end_layout
-
-\begin_layout Plain Layout
-Note que embora a estrutura seja a mesma, o projeto de TCC deve ser mais
- completo e detalhado.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -288,31 +269,6 @@ LatexCommand tableofcontents
 \align block
 \begin_inset CommandInset toc
 LatexCommand lstlistoflistings
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap0b-ResumoAbstract.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Adicione um resumo/abstract se for seu TCC
-\end_layout
 
 \end_inset
 
@@ -512,13 +468,22 @@ filename "Cap-Apendice-A.lyx"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nota informações sobre uso do Latex e Lyx no repositório:
 \end_layout
 
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap-Apendice-B.lyx"
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/ldsc/LDSC-Ajuda-DocumentosAuxiliares"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

@@ -573,6 +573,7 @@ status open
 	lyxscale 50
 	width 100text%
 	height 80theight%
+	keepAspectRatio
 
 \end_inset
 
