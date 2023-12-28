@@ -1,62 +1,62 @@
 
 # Table of Contents
 
-1.  [Nome do Software (ou Biblioteca):](#org74b06e6)
-2.  [Resumo e/ou informação extra:](#org8a2f599)
-3.  [Versão:](#orgdbe1ccb)
-4.  [Data:](#orgfdecc95)
-5.  [Autor de Contato:](#orga5e9b15)
-6.  [Lista dos Autores:](#orge91ea39)
-7.  [Áreas de pesquisa vinculadas:](#orgff65f29)
-8.  [Vinculo com:](#org00fdc26)
-9.  [Paradigmas:](#org2da5acb)
-10. [Tipo de Interface:](#org86aabdc)
-11. [Plataformas Suportadas:](#org0af88b3)
-12. [Linguagens Utilizadas:](#org4b5cfee)
-13. [Bibliotecas Utilizadas (dependências):](#org8069e3b)
-14. [Softwares utilizados (dependências)](#org630e607)
-15. [Tipo de Licença:](#org53b8f13)
-16. [Novas Versões](#org32c03c4)
-17. [Links:](#orgfefea3d)
+1.  [Nome do Software (ou Biblioteca):](#org2313b9b)
+2.  [Resumo e/ou informação extra:](#orgb289cc3)
+3.  [Versão:](#org27654ad)
+4.  [Data:](#org14685fc)
+5.  [Autor de Contato:](#orgffa4bcf)
+6.  [Lista dos Autores:](#org18f81d5)
+7.  [Áreas de pesquisa vinculadas:](#orgdb15429)
+8.  [Vinculo com:](#orgeae2cfa)
+9.  [Paradigmas:](#org239277c)
+10. [Tipo de Interface:](#org179a1a3)
+11. [Plataformas Suportadas:](#orgb4d834c)
+12. [Linguagens Utilizadas:](#org9045193)
+13. [Bibliotecas Utilizadas (dependências):](#org0ce474e)
+14. [Softwares utilizados (dependências)](#orgeed7a30)
+15. [Tipo de Licença:](#orgee014d5)
+16. [Novas Versões](#org73a17fb)
+17. [Links:](#orge932de1)
 
 
 
-<a id="org74b06e6"></a>
+<a id="org2313b9b"></a>
 
 # Nome do Software (ou Biblioteca):
 
 -   
 
 
-<a id="org8a2f599"></a>
+<a id="orgb289cc3"></a>
 
 # Resumo e/ou informação extra:
 
 -   
 
 
-<a id="orgdbe1ccb"></a>
+<a id="org27654ad"></a>
 
 # Versão:
 
 -   1.0.
 
 
-<a id="orgfdecc95"></a>
+<a id="org14685fc"></a>
 
 # Data:
 
 -   2024/2 - segundo semestre.
 
 
-<a id="orga5e9b15"></a>
+<a id="orgffa4bcf"></a>
 
 # Autor de Contato:
 
 -   André Duarte Bueno <andreduartebueno@gmail.com>
 
 
-<a id="orge91ea39"></a>
+<a id="org18f81d5"></a>
 
 # Lista dos Autores:
 
@@ -64,7 +64,7 @@
 -   André Duarte Bueno <andreduartebueno@gmail.com>
 
 
-<a id="orgff65f29"></a>
+<a id="orgdb15429"></a>
 
 # Áreas de pesquisa vinculadas:
 
@@ -73,64 +73,66 @@
 -   &#x2026;
 
 
-<a id="org00fdc26"></a>
+<a id="orgeae2cfa"></a>
 
 # Vinculo com:
 
 -   [Trabalho da disciplina Projeto de Software Aplicado à Engenharia](https://sites.google.com/view/professorandreduartebueno/ensino/projeto-de-software-aplicado).
+-   A metodologia utilizada é descrita [aqui](https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas).
+-   Uma lista de outros projetos desenvolvidos no LDSC é disponibilizado [aqui](https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas).
 
 
-<a id="org2da5acb"></a>
+<a id="org239277c"></a>
 
 # Paradigmas:
 
 -   POO - Programação Orientada a Objeto (códigos em C++)
 
 
-<a id="org86aabdc"></a>
+<a id="org179a1a3"></a>
 
 # Tipo de Interface:
 
 -   Terminal e gráfica (gnuplot).
--   Qt?
+-   Qt? [opcional]
 
 
-<a id="org0af88b3"></a>
+<a id="orgb4d834c"></a>
 
 # Plataformas Suportadas:
 
 -   Windows e GNU/Linux e Mac OS X (não testada).
 
 
-<a id="org4b5cfee"></a>
+<a id="org9045193"></a>
 
 # Linguagens Utilizadas:
 
--   C++ 23.
+-   C++.
 
 
-<a id="org8069e3b"></a>
+<a id="org0ce474e"></a>
 
 # Bibliotecas Utilizadas (dependências):
 
 -   CGnuplot - <https://github.com/ldsc/CGnuplot>
 
 
-<a id="org630e607"></a>
+<a id="orgeed7a30"></a>
 
 # Softwares utilizados (dependências)
 
 -   gnuplot <http://www.gnuplot.info/>
 
 
-<a id="org53b8f13"></a>
+<a id="orgee014d5"></a>
 
 # Tipo de Licença:
 
 -   GPL
 
 
-<a id="org32c03c4"></a>
+<a id="org73a17fb"></a>
 
 # Novas Versões
 
@@ -142,12 +144,11 @@
 -   Na descrição do projeto informe que trata-se de uma nova versão, que tem como base a versão anterior e DESTAQUE COM CLAREZA E OBJETIVIDADE QUAIS AS NOVIDADES DA NOVA VERSÃO.
 
 
-<a id="orgfefea3d"></a>
+<a id="orge932de1"></a>
 
 # Links:
 
 -   [Site do Professor André Duarte Bueno](https://sites.google.com/view/professorandreduartebueno/).
 -   [Site do LDSC no github](https://github.com/ldsc).
 -   [Site do LENEP](https://uenf.br/cct/lenep).
--   .
 
