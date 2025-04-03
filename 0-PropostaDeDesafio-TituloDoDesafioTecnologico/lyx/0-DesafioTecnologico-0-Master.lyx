@@ -1,0 +1,310 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+%-----------------------------------------------------------------
+% Para incluir formatações especificas para apresentações
+%-----------------------------------------------------------------
+%https://tex.stackexchange.com/questions/5894/latex-conditional-expression
+% Abaixo inserimos o pacote etoolbox que permite a gestão de if..else
+\usepackage{etoolbox}
+% Cria o flag
+\newtoggle{FormatoApresentacaoTRUE}
+\newtoggle{IncluirBibliografiaNoCapituloTRUE}
+%Seta o flag - deixe true se for para gerar apresentação de aula e false para formato livro
+%\toggletrue{FormatoApresentacaoTRUE}
+\togglefalse{FormatoApresentacaoTRUE}
+%\toggletrue{IncluirBibliografiaNoCapituloTRUE}
+\togglefalse{IncluirBibliografiaNoCapituloTRUE}
+
+% Para usar no meio dos arquivos do lyx crie um comando latex e cole o texto abaixo
+%\iftoggle{FormatoApresentacaoTRUE}{..verdadeiro..}{..falso..}
+%\iftoggle{FormatoApresentacaoTRUE}{\newpage}{}
+
+%---------------------------------------------------------------
+% Para adicionar/excluir uma seção inteira
+%---------------------------------------------------------------
+%https://tex.stackexchange.com/questions/193295/lyx-conditional-sections
+% Abaixo criamos um novo if
+\newif\ifIncluirSecaoProgramacaoAvancada
+%\FormatoApresentacaoWidefalse
+\IncluirSecaoProgramacaoAvancadatrue
+% Para usar
+% \ifIncluirSecaoProgramacaoAvancada no início do blobo
+% \fi para finalizar o bloco
+
+%---------------------------------------------------------------
+%GERAL
+%---------------------------------------------------------------
+\usepackage{verbatim}
+%%\usepackage{algorithm}
+\usepackage{fancyvrb}
+\usepackage{keyval} 
+\usepackage{indentfirst}
+%\usepackage{color}
+\usepackage{xcolor}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+\definecolor{BLACK}{rgb}{0,0,0}%   rgb color model
+\definecolor{BLUE}{rgb}{0,0,1}%   rgb color model
+
+%Informa que vai usar o pacote listings, disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+
+%Define um novo comando, chamado lst
+%observe que lst chama o comando  lstinputlisting.
+\newcommand{\lst}[2]{%
+    \noindent\rule[-1ex]{\textwidth}{0.3mm}\vspace{-1ex}
+    \lstinputlisting[caption={#2},label={#1},stringspaces=false,frame={tb},lineskip=-1pt,extendedchars=true,%
+    basicstyle=\footnotesize\tt,labelstep=1,labelstyle=\tiny,indent=2em,language=Java,breaklines]{#1}
+    \vspace{1ex}%
+}
+
+%\listfiles
+%\usepackage[]{hyperref}
+
+%\usepackage{mathptmx}  % instead of package times
+
+%\usepackage[scaled=0.9]{helvet} % or [scaled=0.92], if you like
+
+%% Pacote de citações para formato abnt
+%%\usepackage[num]{abntcite}
+%%\usepackage[alf]{abntcite}
+
+%%\usepackage[cam,a4,center]{crop}
+%% a4 é o tamanho físico
+%% center é para centralizar
+%% cam inclui quatro marcas diferentes
+
+%%\usepackage[cam,width=20truecm,height=28truecm,center]{crop}
+%\usepackage[cam,width=18truecm,height=26truecm,center]{crop}
+
+%\noindent
+\end_preamble
+\options normaltoc, sumarioincompleto
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Projeto Engenharia: Desenvolvimento Software Aplicado XXXXX"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align block
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Base.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "0-DesafioTecnologico-1-Capa.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align block
+\begin_inset CommandInset toc
+LatexCommand lstlistoflistings
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "0-DesafioTecnologico-2-DescricaoDaProposta.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Referências} 
+\backslash
+chead{} 
+\backslash
+rhead{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align block
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliografia"
+options "apalike"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+name "Índice"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

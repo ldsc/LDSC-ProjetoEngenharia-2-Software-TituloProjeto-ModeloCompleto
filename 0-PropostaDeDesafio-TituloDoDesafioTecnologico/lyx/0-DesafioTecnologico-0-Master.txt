@@ -1,0 +1,189 @@
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+CENTRO DE CIÊNCIA E TECNOLOGIA
+
+
+
+
+
+
+
+Desafio Tecnológico
+Título do Desafio
+
+
+
+
+
+AUTORES
+Prof. nome do professor ou professores
+(nome empresas/engenheiros)
+
+
+
+
+
+MACAÉ - RJ
+
+
+
+Sumário
+
+Capítulo 1 Descrição da Proposta
+1.1 Título da proposta
+1.2 Convocação
+1.3 Atendimento obrigação? 
+1.4 Área, tema e sub-tema 
+1.5 Descrição do desafio tecnológico 
+1.6 Objetivo geral 
+1.7 Solução esperada - Tipo
+1.8 Solução esperada - Descrição 
+1.9 TRL pretendido 
+1.10 CRL pretendido
+1.11 Informações básicas complementares
+1.12 Prazo máximo para desenvolvimento da solução
+
+
+
+
+Descrição da Proposta
+
+
+
+
+
+Apresenta-se aqui a proposta de desenvolvimento de um projeto de 
+engenharia que visa ...
+
+1.1 Título da proposta
+
+• Título: 
+
+1.2 Convocação
+
+• [ ] Projeto da UENF [ ] Projeto do CCT [ ] Projeto do LENEP : 
+  nome do professor
+
+• [ ] Projeto de extenção: nome da empresa de engenharia 
+
+1.3 Atendimento obrigação? 
+
+• [ ] sim - anp.
+
+• [ ] sim disciplinas programação: Introdução ao Projeto de 
+  Engenharia, Programação Orientada a Objeto em C++ e Projeto de 
+  Software Aplicado à Engenharia (antiga programação prática).
+
+• [ ] sim - TCC do curso de engenharia de petróleo.
+
+• [ ] não.
+
+1.4 Área, tema e sub-tema 
+
+• Título da área do conhecimento. 
+
+  Dica: Ver áreas do conhecimento no site do CNPq ou no diretório 
+    MaterialAuxiliar, arquivo 
+    TabelaAreasConhecimento-Assuntos.dat. Pode envolver várias 
+    áreas do conhecimento.
+
+• Título do tema específico.
+
+• Título do sub-tema.
+
+1.5 Descrição do desafio tecnológico 
+
+• Descrição do desafio tecnológico .
+
+  – Coloque aqui uma breve descrição do desafio tecnológico.
+
+  – Se necessário adicionar imagens e tabelas, referenciar 
+    artigos e livros, pode adicionar links para imagens e 
+    documentos externos.
+
+1.6 Objetivo geral 
+
+• Breve descrição do objetivo. 
+
+  Nota: para as disciplina de modelagem computacional relacionar 
+    com modelos computacionais associados.
+
+1.7 Solução esperada - Tipo
+
+• Tipo do produto final, exemplo um software, um equipamento, uma 
+  metodologia.
+
+  Nota: para as disciplina de modelagem computacional o produto é 
+    sempre um software ou algoritmo.
+
+1.8 Solução esperada - Descrição 
+
+• Breve descrição do tipo de solução esperada.
+
+• Descreva o produto final esperado.
+
+1.9 TRL pretendido 
+
+• Veja conceito de TRL e material da disciplina [https://sites.google.com/view/professorandreduartebueno/ensino/introdu%C3%A7%C3%A3o-ao-projeto-de-engenharia||Introdução ao Projeto de Engenharia]
+  .
+
+1.10 CRL pretendido
+
+• Veja conceito de CRL e material da disciplina [https://sites.google.com/view/professorandreduartebueno/ensino/introdu%C3%A7%C3%A3o-ao-projeto-de-engenharia||Introdução ao Projeto de Engenharia]
+  .
+
+1.11 Informações básicas complementares
+
+• Coloque aqui um conjunto de informações que podem ajudar no 
+  entendimento do escopo do problema científico/tecnológico e do 
+  produto desejado.
+
+• Pode incluir links para material externo e referências 
+  bibliográficas.
+
+  Nota: No modelo disponibilizado no github temos dois diretórios 
+    para armazenar informações complementares. 
+
+    MaterialAuxiliar: Material auxiliar ao projeto desenvolvido 
+      internamente.
+
+    MaterialExterno: Material auxiliar ao projeto desenvolvido 
+      por terceiros (adicionar lista de referências na 
+      bibliografia e citar autores).
+
+1.12 Prazo máximo para desenvolvimento da solução
+
+• Varia de 18 a 36 meses.
+
+  – O projeto de software é desenvolvido ao longo do 5/6/7 e 
+    eventualmente 8 períodos do curso. Veja [https://sites.google.com/view/professorandreduartebueno/ensino#h.2h95uxhiyblr||grade do curso]
+    .
+
+  – Se o projeto for extendido pode se transformar no TCC na 
+    forma de projeto de engenharia, nestes casos prever 6-12 
+    meses a mais.
+
+  Nota: Note que é um projeto de longo prazo e que requer muita 
+    dedicação ao longo de todos os semestres envolvidos, não 
+    deixe para depois imaginando que terá condições de fazer 
+    "rápido¨, projetos de engenharia por definição são demorados. 
+
+  Nota: Os modelos de software a serem desenvolvidos utilzam o 
+    paradigma da orientação a objetos, [1, 3, 2].
+
+
+
+
+
+Bibliografia
+
+[1] Michael Blaha and James Rumbaugh, Modelagem e Projetos Baseados em Objetos com UML 2 (Rio de Janeiro: Campus, 2006).
+
+[2] André Duarte Bueno, Programação Orientada a Objeto com C++ - Aprenda a Programar em Ambiente Multiplataforma com Software Livre (São Paulo: Novatec, 2003).
+
+[3] James Rumbaugh, Michael Blaha, Wiliam Premerlani, Frederick Eddy, and William Lorensen, Modelagem e Projetos Baseados em Objetos (Rio de Janeiro: Edit. Campus, 1994).
+
+
+
+[Comando LaTeX: printindex]
+

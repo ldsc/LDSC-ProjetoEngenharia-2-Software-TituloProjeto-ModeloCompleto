@@ -1,0 +1,599 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+%-----------------------------------------------------------------
+% Para incluir formatações especificas para apresentações
+%-----------------------------------------------------------------
+%https://tex.stackexchange.com/questions/5894/latex-conditional-expression
+% Abaixo inserimos o pacote etoolbox que permite a gestão de if..else
+\usepackage{etoolbox}
+% Cria o flag
+\newtoggle{FormatoApresentacaoTRUE}
+\newtoggle{IncluirBibliografiaNoCapituloTRUE}
+%Seta o flag - deixe true se for para gerar apresentação de aula e false para formato livro
+%\toggletrue{FormatoApresentacaoTRUE}
+\togglefalse{FormatoApresentacaoTRUE}
+%\toggletrue{IncluirBibliografiaNoCapituloTRUE}
+\togglefalse{IncluirBibliografiaNoCapituloTRUE}
+
+% Para usar no meio dos arquivos do lyx crie um comando latex e cole o texto abaixo
+%\iftoggle{FormatoApresentacaoTRUE}{..verdadeiro..}{..falso..}
+%\iftoggle{FormatoApresentacaoTRUE}{\newpage}{}
+
+%---------------------------------------------------------------
+% Para adicionar/excluir uma seção inteira
+%---------------------------------------------------------------
+%https://tex.stackexchange.com/questions/193295/lyx-conditional-sections
+% Abaixo criamos um novo if
+\newif\ifIncluirSecaoProgramacaoAvancada
+%\FormatoApresentacaoWidefalse
+\IncluirSecaoProgramacaoAvancadatrue
+% Para usar
+% \ifIncluirSecaoProgramacaoAvancada no início do blobo
+% \fi para finalizar o bloco
+
+%---------------------------------------------------------------
+%GERAL
+%---------------------------------------------------------------
+\usepackage{verbatim}
+%%\usepackage{algorithm}
+\usepackage{fancyvrb}
+\usepackage{keyval} 
+\usepackage{indentfirst}
+%\usepackage{color}
+\usepackage{xcolor}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+\definecolor{BLACK}{rgb}{0,0,0}%   rgb color model
+\definecolor{BLUE}{rgb}{0,0,1}%   rgb color model
+
+%Informa que vai usar o pacote listings, disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+
+%Define um novo comando, chamado lst
+%observe que lst chama o comando  lstinputlisting.
+\newcommand{\lst}[2]{%
+    \noindent\rule[-1ex]{\textwidth}{0.3mm}\vspace{-1ex}
+    \lstinputlisting[caption={#2},label={#1},stringspaces=false,frame={tb},lineskip=-1pt,extendedchars=true,%
+    basicstyle=\footnotesize\tt,labelstep=1,labelstyle=\tiny,indent=2em,language=Java,breaklines]{#1}
+    \vspace{1ex}%
+}
+
+%\listfiles
+%\usepackage[]{hyperref}
+
+%\usepackage{mathptmx}  % instead of package times
+
+%\usepackage[scaled=0.9]{helvet} % or [scaled=0.92], if you like
+
+%% Pacote de citações para formato abnt
+%%\usepackage[num]{abntcite}
+%%\usepackage[alf]{abntcite}
+
+%%\usepackage[cam,a4,center]{crop}
+%% a4 é o tamanho físico
+%% center é para centralizar
+%% cam inclui quatro marcas diferentes
+
+%%\usepackage[cam,width=20truecm,height=28truecm,center]{crop}
+%\usepackage[cam,width=18truecm,height=26truecm,center]{crop}
+
+%\noindent
+\end_preamble
+\use_default_options false
+\master 1-DesafioTecnologico-0-Master.lyx
+\maintain_unincluded_children no
+\language brazilian
+\language_package auto
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Descrição da Proposta
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Desenvolvimento do Projeto de Engenharia - Descrição da Proposta} 
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{NomeDoProfessorQueElaborouODesafio} 
+\backslash
+rfoot{
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Substitua "NomeDoProfessorQueElaborouODesafio" por seu nome e sobrenome
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamais retire o 
+\backslash
+today ele vai colocar data no material impresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se aqui a proposta de desenvolvimento de um projeto de engenharia que visa ...
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+descrição em um parágrafo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Título da proposta
+\end_layout
+
+\begin_layout Itemize
+Título:
+ 
+\end_layout
+
+\begin_layout Section
+Convocação
+\end_layout
+
+\begin_layout Itemize
+[ ] Projeto da UENF [ ] Projeto do CCT [ ] Projeto do LENEP :
+ nome do professor
+\end_layout
+
+\begin_layout Itemize
+[ ] Projeto de extensão:
+ nome da empresa de engenharia 
+\end_layout
+
+\begin_layout Section
+Atendimento obrigação?
+ 
+\end_layout
+
+\begin_layout Itemize
+[ ] sim - anp.
+\end_layout
+
+\begin_layout Itemize
+[ ] sim disciplinas modelagem computacional:
+ Introdução ao Projeto de Engenharia,
+ Programação Orientada a Objeto em C++ e Projeto de Software Aplicado à Engenharia (antiga programação prática).
+\end_layout
+
+\begin_layout Itemize
+[ ] sim - TCC do curso de engenharia de petróleo.
+\end_layout
+
+\begin_layout Itemize
+[ ] não.
+\end_layout
+
+\begin_layout Section
+Área,
+ tema e sub-tema 
+\end_layout
+
+\begin_layout Itemize
+Título da área do conhecimento.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Dica:
+ Ver áreas do conhecimento no 
+\begin_inset CommandInset href
+LatexCommand href
+name "site do CNPq"
+target "https://lattes.cnpq.br/web/dgp/arvore-do-conhecimento"
+literal "false"
+
+\end_inset
+
+ ou no arquivo TabelaAreasConhecimento-Assuntos.dat.
+ O projeto pode envolver várias áreas do conhecimento,
+ mas deve ter como foco principal as áreas de engenharia e modelagem computacional.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Título do tema específico.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o nome deve refletir o tema específico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Título do sub-tema.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Informe sub-temas associados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Descrição do desafio tecnológico 
+\end_layout
+
+\begin_layout Itemize
+Descrição do desafio tecnológico 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+descrição da proposta sobre a ótica do problema de engenharia
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Coloque aqui uma breve descrição do desafio tecnológico.
+\end_layout
+
+\begin_layout Itemize
+Se necessário adicionar imagens e tabelas,
+ referenciar artigos e livros,
+ pode adicionar links para imagens e documentos externos.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Objetivo geral 
+\end_layout
+
+\begin_layout Itemize
+Breve descrição do objetivo.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Nota:
+ Foco no problema de engenharia e não na solução.
+ Para as disciplina de modelagem computacional relacionar com modelos computacionais associados.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Solução esperada - Tipo
+\end_layout
+
+\begin_layout Itemize
+Tipo do produto final,
+ exemplo um software,
+ um equipamento,
+ uma metodologia.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Nota:
+ Foco na solução a ser desenvolvida.
+ Para as disciplina de modelagem computacional o produto é sempre um software ou algoritmo.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Solução esperada - Descrição
+\end_layout
+
+\begin_layout Itemize
+Breve descrição do tipo de solução esperada.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Exemplo:
+ descrever o tipo de solução;
+ é um modelo matemático?
+ é um algoritmo?
+ é uma biblioteca computacional?
+ é um software didático?
+ é um software de engenharia?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Descreva o produto final esperado.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Exemplo:
+ o que é o produto final;
+ o que ele faz;
+ foco na solução a ser desenvolvida e não no problema de engenharia.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+TRL pretendido 
+\end_layout
+
+\begin_layout Itemize
+TRL = 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Veja o conceito de TRL e material da disciplina 
+\begin_inset CommandInset href
+LatexCommand href
+name "Introdução ao Projeto de Engenharia"
+target "https://sites.google.com/view/professorandreduartebueno/ensino/introdu%C3%A7%C3%A3o-ao-projeto-de-engenharia"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+CRL pretendido
+\end_layout
+
+\begin_layout Itemize
+CRL = 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Veja o conceito de CRL e material da disciplina 
+\begin_inset CommandInset href
+LatexCommand href
+name "Introdução ao Projeto de Engenharia"
+target "https://sites.google.com/view/professorandreduartebueno/ensino/introdu%C3%A7%C3%A3o-ao-projeto-de-engenharia"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Informações básicas complementares
+\end_layout
+
+\begin_layout Itemize
+Coloque aqui um conjunto de informações que podem ajudar no entendimento do escopo do problema científico/tecnológico e do produto desejado.
+\end_layout
+
+\begin_layout Itemize
+Pode incluir links para material externo e referências bibliográficas.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Nota:
+ No modelo disponibilizado no 
+\begin_inset CommandInset href
+LatexCommand href
+name "github"
+target "https://github.com/ldsc/LDSC-ProjetoEngenharia-2-Software-TituloProjeto-ModeloCompleto"
+literal "false"
+
+\end_inset
+
+ temos dois diretórios para armazenar informações complementares.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+MaterialAuxiliar:
+ Material auxiliar ao projeto desenvolvido internamente.
+\end_layout
+
+\begin_layout Description
+MaterialExterno:
+ Material auxiliar ao projeto desenvolvido por terceiros (adicionar lista de referências na bibliografia e citar autores).
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Prazo máximo para desenvolvimento da solução
+\end_layout
+
+\begin_layout Itemize
+Varia de 18 a 36 meses.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O projeto de software é desenvolvido ao longo do 5/6 e 8 períodos do curso.
+ Veja 
+\begin_inset CommandInset href
+LatexCommand href
+name "grade do curso"
+target "https://sites.google.com/view/professorandreduartebueno/ensino#h.2h95uxhiyblr"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Se o projeto for estendido pode se transformar no TCC na forma de projeto de engenharia,
+ nestes casos prever 6-12 meses a mais.
+\end_layout
+
+\begin_layout Description
+Nota:
+ Note que é um projeto de longo prazo e que requer muita dedicação ao longo de todos os semestres envolvidos,
+ não deixe para depois imaginando que terá condições de fazer "rápido¨,
+ projetos de engenharia por definição são demorados.
+ 
+\end_layout
+
+\begin_layout Description
+Nota:
+ Os modelos de software a serem desenvolvidos utilizam o paradigma da orientação a objetos,
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "prog-UML-blaha,prog-UML-Rumbaugh,adb-prog-livroCpp"
+literal "false"
+
+\end_inset
+
+,
+ e a linguagem de programação C++ em função do baixo consumo de memória e alto desempenho.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

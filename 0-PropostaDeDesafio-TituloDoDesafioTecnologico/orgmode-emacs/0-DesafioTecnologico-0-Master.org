@@ -1,0 +1,75 @@
+#+DESCRIPTION: Apresenta um modelo de desafio tecnológico a ser desenvolvido nas disciplinas de modelagem computacional e/ou no TCC
++TITLE: Desafio Tecnológico
+#+AUTHOR: André D. Bueno
+#+LANGUAGE: pt
+
+* Instituição
+- UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+- CENTRO DE CIÊNCIA E TECNOLOGIA
+- LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+- Desafio Tecnológico
+  - Título do Desafio
+- AUTORES
+  - Prof. nome do professor ou professores
+  - (nome empresas/engenheiros)
+- MACAÉ - RJ
+
+* Descrição da Proposta
+Apresenta-se aqui a proposta de desenvolvimento de um projeto de 
+engenharia que visa ...
+
+* Título da proposta
+
+**  Título: titulo...
+
+* Convocação
+- [ ] Projeto da UENF
+- [ ] Projeto do CCT
+- [ ] Projeto do LENEP :   nome do professor
+- [ ] Projeto de extenção: nome da empresa de engenharia 
+* Atendimento obrigação? 
+- [ ] sim - anp.
+- [ ] sim disciplinas programação: Introdução ao Projeto de Engenharia, Programação Orientada a Objeto em C++ e Projeto de Software Aplicado à Engenharia (antiga programação prática).
+- [ ] sim - TCC do curso de engenharia de petróleo.
+- [ ] não.
+
+* Área, tema e sub-tema 
+** Título da área do conhecimento. 
+- Dica: Ver áreas do conhecimento no site do CNPq ou no diretório MaterialAuxiliar, arquivo TabelaAreasConhecimento-Assuntos.dat. Pode envolver várias áreas do conhecimento.
+** Título do tema específico.
+** Título do sub-tema.
+* Descrição do desafio tecnológico
+- Coloque aqui uma breve descrição do desafio tecnológico.
+- Se necessário adicionar imagens e tabelas, referenciar artigos e livros, pode adicionar links para imagens e documentos externos.
+* Objetivo geral 
+- Breve descrição do objetivo.
+- Nota: para as disciplina de modelagem computacional relacionar com modelos computacionais associados.
+* Solução esperada - Tipo
+- Tipo do produto final, exemplo um software, um equipamento, uma metodologia.
+- Nota: para as disciplina de modelagem computacional o produto é sempre um software ou algoritmo.
+* Solução esperada - Descrição 
+- Breve descrição do tipo de solução esperada.
+- Descreva o produto final esperado.
+* TRL pretendido
+- Veja conceito de TRL e material da disciplina [[https://sites.google.com/view/professorandreduartebueno/ensino/introdu%C3%A7%C3%A3o-ao-projeto-de-engenharia][Introdução ao Projeto de Engenharia]].
+* CRL pretendido
+- Veja conceito de CRL e material da disciplina [[https://sites.google.com/view/professorandreduartebueno/ensino/introdu%C3%A7%C3%A3o-ao-projeto-de-engenharia][Introdução ao Projeto de Engenharia]].
+* Informações básicas complementares
+- Coloque aqui um conjunto de informações que podem ajudar no entendimento do escopo do problema científico/tecnológico e do produto desejado.
+- Pode incluir links para material externo e referências bibliográficas.
+- Nota: No modelo disponibilizado no github temos dois diretórios para armazenar informações complementares.
+  - MaterialAuxiliar: Material auxiliar ao projeto desenvolvido internamente.
+  - MaterialExterno: Material auxiliar ao projeto desenvolvido por terceiros (adicionar lista de referências na bibliografia e citar autores).
+* Prazo máximo para desenvolvimento da solução
+- Varia de 18 a 36 meses.
+- O projeto de software é desenvolvido ao longo do 5/6/7 e eventualmente 8 períodos do curso.
+  Veja [[https://lh6.googleusercontent.com/1eHjd-GOlFhRpTXcye49LJDKAjjWcrxTuGjKC3_yDE0GL5_K5GD_eGxUVaDAxV_ALE50pX1yv_rJYPx3O5CeuV3FSvSxroPAoeJf3huomnRGfnRaR2UwunlQN2ki7qVY6Q=w1280][grade do curso]].
+- Se o projeto for extendido pode se transformar no TCC na forma de projeto de engenharia, nestes casos prever 6-12 meses a mais.
+- Nota: Note que é um projeto de longo prazo e que requer muita dedicação ao longo de todos os semestres envolvidos, não deixe para depois imaginando que terá condições de fazer "rápido¨, projetos de engenharia por definição são demorados.
+- Nota: Os modelos de software a serem desenvolvidos utilizam o paradigma da orientação a objetos, [1, 2, 3].
+
+* Bibliografia
+1. Michael Blaha and James Rumbaugh, Modelagem e Projetos Baseados em Objetos com UML 2 (Rio de Janeiro: Campus, 2006).
+2. André Duarte Bueno, Programação Orientada a Objeto com C++ - Aprenda a Programar em Ambiente Multiplataforma com Software Livre (São Paulo: Novatec, 2003).
+3. James Rumbaugh, Michael Blaha, Wiliam Premerlani, Frederick Eddy, and William Lorensen, Modelagem e Projetos Baseados em Objetos (Rio de Janeiro: Edit. Campus, 1994).
+

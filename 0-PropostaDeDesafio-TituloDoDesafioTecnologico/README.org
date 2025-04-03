@@ -1,0 +1,37 @@
+#+TITLE:    LDSC-ProjetoEngenharia-1-PropostaDeDesafio-TituloDoDesafioTecnologico
+
+* Informações:
+- Link: https://github.com/ldsc/LDSC-ProjetoEngenharia-1-PropostaDeDesafio-TituloDoDesafioTecnologico
+
+- Repositório com modelo de proposta de desafio tecnológico.
+
+* Versão: 
+- 1.0.
+
+* Data:
+- 2023/2 - segundo semestre.
+  
+* Autor de Contato:
+- André Duarte Bueno <andreduartebueno@gmail.com>
+
+* Áreas de pesquisa vinculadas: 
+- Administração
+- Projeto de Engenharia
+- Gestão de Projetos de Engenharia
+- Algoritmos
+- Modelagem de Software - UML
+- Programação Orientada a Objeto
+- Programação em C++
+- Engenharia de Petróleo
+
+* Vinculo com: 
+- [[https://sites.google.com/view/professorandreduartebueno/ensino/fundamentos-de-programa%C3%A7%C3%A3o-em-c][Disciplina Fundamentos de Ciência da Computação]]
+- [[https://sites.google.com/view/professorandreduartebueno/ensino/introdu%C3%A7%C3%A3o-ao-projeto-de-engenharia][Disciplina Introdução ao Projeto de Engenharia]]
+- [[https://sites.google.com/view/professorandreduartebueno/ensino/prog-orientada-objeto-c-2024][Disciplina Programação Orientada a Objeto com C++]]
+- [[https://sites.google.com/view/professorandreduartebueno/ensino/projeto-de-software-aplicado][Disciplina Projeto de Software Aplicado]]
+  
+* Links:
+- [[https://sites.google.com/view/professorandreduartebueno/][Site do Professor André Duarte Bueno]].
+- [[https://github.com/ldsc][Site do LDSC no github]].
+- [[https://uenf.br/cct/lenep][Site do LENEP]].
+
