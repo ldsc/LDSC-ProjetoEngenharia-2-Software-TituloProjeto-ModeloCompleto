@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -86,11 +86,11 @@
 \end_preamble
 \options brazil
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -98,7 +98,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -132,7 +134,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -155,12 +159,17 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \bullet 0 5 33 -1
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -181,7 +190,10 @@ status open
 
 \begin_layout Plain Layout
 
-% L=left, R=right, E=even, O=odd
+% L=left,
+ R=right,
+ E=even,
+ O=odd
 \end_layout
 
 \begin_layout Plain Layout
@@ -214,13 +226,6 @@ rightmark}
 
 \backslash
 iftoggle{FormatoApresentacaoTRUE}
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-fancyfoot[L]{}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -282,7 +287,9 @@ status open
 
 
 \backslash
-definecolor{brown}{rgb}{0.59, 0.29, 0.0}
+definecolor{brown}{rgb}{0.59,
+ 0.29,
+ 0.0}
 \end_layout
 
 \begin_layout Plain Layout
@@ -392,7 +399,8 @@ status open
 
 
 \backslash
-lstset{style=iC++, numbers=none}
+lstset{style=iC++,
+ numbers=none}
 \end_layout
 
 \end_inset
@@ -460,8 +468,8 @@ lstset{style=iC++}
 
 
 \backslash
-lstinputlisting[caption={Usando os tipos pré-definidos de C++.}, label={tipos}]
- {../listagens/Cap-09/UsandoOsTiposPre-Definidos.cpp}
+lstinputlisting[caption={Usando os tipos pré-definidos de C++.},
+ label={tipos}] {../listagens/Cap-09/UsandoOsTiposPre-Definidos.cpp}
 \end_layout
 
 \end_inset
@@ -519,7 +527,8 @@ lstinputlisting[caption={Usando os tipos pré-definidos de C++.
 \backslash
 texttt{source
 \backslash
-_location}}, label={tipos}] {../listagens/Cap-09/UsandoOsTiposPre-Definidos.cpp}
+_location}},
+ label={tipos}] {../listagens/Cap-09/UsandoOsTiposPre-Definidos.cpp}
 \end_layout
 
 \end_inset
@@ -560,19 +569,26 @@ Como definir cores para
 \begin_layout Plain Layout
 
 \backslash
-#define, 
+#define,
+ 
 \backslash
-#ifdef, 
+#ifdef,
+ 
 \backslash
-#ifndef, 
+#ifndef,
+ 
 \backslash
-#undef, 
+#undef,
+ 
 \backslash
-#if, 
+#if,
+ 
 \backslash
-#else, 
+#else,
+ 
 \backslash
-#elif, 
+#elif,
+ 
 \backslash
 #endif 
 \end_layout
@@ -634,29 +650,34 @@ language=[ISO]C++,
 
 \begin_layout Plain Layout
 
-numbers=left, 
+numbers=left,
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
 numberstyle=
 \backslash
-tiny, 
+tiny,
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
-stepnumber=1, 
+stepnumber=1,
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
-numbersep=1pt, 
+numbersep=1pt,
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
-firstnumber=1, 
+firstnumber=1,
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -695,7 +716,8 @@ color{white},
 
 commentstyle=
 \backslash
-color{lightgray}, 
+color{lightgray},
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -707,7 +729,8 @@ color{blue},
 
 \begin_layout Plain Layout
 
-morekeywords={*,...}, 
+morekeywords={*,...},
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -729,18 +752,95 @@ color{mygreen1},
 
 \begin_layout Plain Layout
 
-emph={ bool, char, char8_t, char16_t, char32_t, wchar_t,short, int, long,
- long long, float, double, long double, void, const, extern, mutable, register,
- signed, static, typedef, unsigned, volatile, using, typename, auto, constexpr,
- decltype, class, enum, struct, union, const_cast, dynamic_cast, reinterpret_cas
-t, static_cast, try, throw, catch, noexcept, delete, new, nullptr, static,
- const, friend, virtual, operator, namespace, sizeof, template, typename,
- concept, class,  delete, friend, explicit, this, typeid, private, protected,
- public, alignas, alignof, asm, concept, consteval, constexpr, constinit
- export, extern, inline, static_assert, requires, template, typename, mutable,
-  volatile, co_await, co_return, co_yield, atomic_cancel, atomic_commit,
- atomic_noexcept, import, module, synchronized,co_await, co_return, co_yield,
- reflexpr }, 
+emph={ bool,
+ char,
+ char8_t,
+ char16_t,
+ char32_t,
+ wchar_t,short,
+ int,
+ long,
+ long long,
+ float,
+ double,
+ long double,
+ void,
+ const,
+ extern,
+ mutable,
+ register,
+ signed,
+ static,
+ typedef,
+ unsigned,
+ volatile,
+ using,
+ typename,
+ auto,
+ constexpr,
+ decltype,
+ class,
+ enum,
+ struct,
+ union,
+ const_cast,
+ dynamic_cast,
+ reinterpret_cast,
+ static_cast,
+ try,
+ throw,
+ catch,
+ noexcept,
+ delete,
+ new,
+ nullptr,
+ static,
+ const,
+ friend,
+ virtual,
+ operator,
+ namespace,
+ sizeof,
+ template,
+ typename,
+ concept,
+ class,
+  delete,
+ friend,
+ explicit,
+ this,
+ typeid,
+ private,
+ protected,
+ public,
+ alignas,
+ alignof,
+ asm,
+ concept,
+ consteval,
+ constexpr,
+ constinit export,
+ extern,
+ inline,
+ static_assert,
+ requires,
+ template,
+ typename,
+ mutable,
+  volatile,
+ co_await,
+ co_return,
+ co_yield,
+ atomic_cancel,
+ atomic_commit,
+ atomic_noexcept,
+ import,
+ module,
+ synchronized,co_await,
+ co_return,
+ co_yield,
+ reflexpr },
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -762,9 +862,31 @@ color{blue}},
 
 \begin_layout Plain Layout
 
-emph={[2] and, and_eq, bitand, bitor, compl, false, not, not_eq, or, or_eq,
- true, xor, xor_eq, break, case, continue, default, do, else, for, goto,
- if, return, switch, while  } ,
+emph={[2] and,
+ and_eq,
+ bitand,
+ bitor,
+ compl,
+ false,
+ not,
+ not_eq,
+ or,
+ or_eq,
+ true,
+ xor,
+ xor_eq,
+ break,
+ case,
+ continue,
+ default,
+ do,
+ else,
+ for,
+ goto,
+ if,
+ return,
+ switch,
+ while  } ,
 \end_layout
 
 \begin_layout Plain Layout
@@ -781,21 +903,16 @@ color{red}},
 
 \begin_layout Plain Layout
 
-% Arquivos de inclusao mymauve (note que alguns poderao aparecer com outra
- cor, ocorre quando nome arquivo igual ao nome da classe)
+% Arquivos de inclusao mymauve (note que alguns poderao aparecer com outra cor,
+ ocorre quando nome arquivo igual ao nome da classe)
 \end_layout
 
 \begin_layout Plain Layout
 
-emph={[3] algorithm , atomic ,backward ,bits ,bitset ,cassert ,ccomplex
- ,cctype ,cerrno ,cfenv ,cfloat ,chrono ,cinttypes ,ciso646 ,climits ,clocale
- ,cmath ,complex ,csetjmp ,csignal ,cstdalign ,cstdarg ,cstdbool ,cstddef
- ,cstdint ,cstdio ,cstdlib ,cstring ,ctgmath ,ctime ,cwchar ,cwctype ,debug
- ,decimal ,exception ,ext ,filesystem, fstream ,functional  ,initializer_list
- ,iomanip ,ios ,iosfwd ,iostream ,istream ,iterator ,limits ,locale ,numeric
- ,ostream ,profile ,random ,ratio ,regex ,scoped_allocator ,sstream ,stack
- ,stdexcept  ,streambuf ,system_error ,tr1 ,tr2 ,typeindex ,typeinfo ,type_trait
-s ,utility ,x86_64-redhat-linux ,complex   } , 
+emph={[3] algorithm ,
+ atomic ,backward ,bits ,bitset ,cassert ,ccomplex ,cctype ,cerrno ,cfenv ,cfloat ,chrono ,cinttypes ,ciso646 ,climits ,clocale ,cmath ,complex ,csetjmp ,csignal ,cstdalign ,cstdarg ,cstdbool ,cstddef ,cstdint ,cstdio ,cstdlib ,cstring ,ctgmath ,ctime ,cwchar ,cwctype ,debug ,decimal ,exception ,ext ,filesystem,
+ fstream ,functional  ,initializer_list ,iomanip ,ios ,iosfwd ,iostream ,istream ,iterator ,limits ,locale ,numeric ,ostream ,profile ,random ,ratio ,regex ,scoped_allocator ,sstream ,stack ,stdexcept  ,streambuf ,system_error ,tr1 ,tr2 ,typeindex ,typeinfo ,type_traits ,utility ,x86_64-redhat-linux ,complex   } ,
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -817,7 +934,10 @@ color{green}},
 
 \begin_layout Plain Layout
 
-emph={[4] string, string_view, wstring, u16string,u32string } ,
+emph={[4] string,
+ string_view,
+ wstring,
+ u16string,u32string } ,
 \end_layout
 
 \begin_layout Plain Layout
@@ -841,9 +961,22 @@ bfseries},
 
 \begin_layout Plain Layout
 
-emph={[5]  array, vector, deque, forward_list, list, set, multiset, map,
- multimap, unordered_set, unordered_multiset, unordered_map, unordered_multimap
- , pair, tuple, basic_string },
+emph={[5]  array,
+ vector,
+ deque,
+ forward_list,
+ list,
+ set,
+ multiset,
+ map,
+ multimap,
+ unordered_set,
+ unordered_multiset,
+ unordered_map,
+ unordered_multimap ,
+ pair,
+ tuple,
+ basic_string },
 \end_layout
 
 \begin_layout Plain Layout
@@ -867,25 +1000,117 @@ bfseries},
 
 \begin_layout Plain Layout
 
-emph={[6]  accumulate, find, max, adjacent_find, find_if, max_element, binary_se
-arch, min, count, find_first_of, for_each, min_element, count_if, includes,
- mismatch, equal, lexicographical_compare, nth_element, equal_range, lower_bound
-, mismatch, search, search_n, find_end, upper_bound, copy, remove_if, copy_backw
-ard, replace, fill, replace_copy, fill_n, replace_copy_if, generate, replace_if,
- generate_n, reverse, inplace_merge, reverse_copy, iter_swap, rotate,  make_heap
-, rotate_copy, merge, set_difference, nth_element, next_permutation, set_interse
-ction, set_symmetric_difference, partial_sort, set_union, partial_sort_copy,
- sort, partition, sort_heap, prev_permutation, stable_partition, push_heap,
- stable_sort, pop_heap, swap, random_shuffle, swap_ranges, remove, transform,
- unique, unique_copy, remove_copy, remove_copy_if, all_of, any_of, none_of,
- find_if_not, copy_if, copy_n, move, move_backward, suffle, is_partitioned,
- partition_copy, partition_point, is_sorted, is_sorted_until, is_heap, is_heap_u
-ntil, minmax, minmax_element, is_permutation, iota, uninitialized_copy_n,
- for_each_n, sample, clamp, reduce, exclusive_scan, inclusive_scan, transform_re
-duce, transform_exclusive_scan, transform_inclusive_scan, uninitialized_move,
- uninitialized_move_n, uninitialized_default_construct, uninitialized_default_co
-nstruct_n, uninitialized_value_construct, uninitialized_value_construct_n,
- destroy, destroy_at, destroy_n, shift_left, shift_right, compare_3way,
+emph={[6]  accumulate,
+ find,
+ max,
+ adjacent_find,
+ find_if,
+ max_element,
+ binary_search,
+ min,
+ count,
+ find_first_of,
+ for_each,
+ min_element,
+ count_if,
+ includes,
+ mismatch,
+ equal,
+ lexicographical_compare,
+ nth_element,
+ equal_range,
+ lower_bound,
+ mismatch,
+ search,
+ search_n,
+ find_end,
+ upper_bound,
+ copy,
+ remove_if,
+ copy_backward,
+ replace,
+ fill,
+ replace_copy,
+ fill_n,
+ replace_copy_if,
+ generate,
+ replace_if,
+ generate_n,
+ reverse,
+ inplace_merge,
+ reverse_copy,
+ iter_swap,
+ rotate,
+  make_heap,
+ rotate_copy,
+ merge,
+ set_difference,
+ nth_element,
+ next_permutation,
+ set_intersection,
+ set_symmetric_difference,
+ partial_sort,
+ set_union,
+ partial_sort_copy,
+ sort,
+ partition,
+ sort_heap,
+ prev_permutation,
+ stable_partition,
+ push_heap,
+ stable_sort,
+ pop_heap,
+ swap,
+ random_shuffle,
+ swap_ranges,
+ remove,
+ transform,
+ unique,
+ unique_copy,
+ remove_copy,
+ remove_copy_if,
+ all_of,
+ any_of,
+ none_of,
+ find_if_not,
+ copy_if,
+ copy_n,
+ move,
+ move_backward,
+ suffle,
+ is_partitioned,
+ partition_copy,
+ partition_point,
+ is_sorted,
+ is_sorted_until,
+ is_heap,
+ is_heap_until,
+ minmax,
+ minmax_element,
+ is_permutation,
+ iota,
+ uninitialized_copy_n,
+ for_each_n,
+ sample,
+ clamp,
+ reduce,
+ exclusive_scan,
+ inclusive_scan,
+ transform_reduce,
+ transform_exclusive_scan,
+ transform_inclusive_scan,
+ uninitialized_move,
+ uninitialized_move_n,
+ uninitialized_default_construct,
+ uninitialized_default_construct_n,
+ uninitialized_value_construct,
+ uninitialized_value_construct_n,
+ destroy,
+ destroy_at,
+ destroy_n,
+ shift_left,
+ shift_right,
+ compare_3way,
  lexicographical_compare_3way } ,
 \end_layout
 
@@ -908,13 +1133,46 @@ color{olive}},
 
 \begin_layout Plain Layout
 
-emph={[7] thread, yield, get_id, sleep_for, sleep_until, thread_local, memory,
- mutex, parallel, mutex, timed_mutex, recursive_mutex, shared_mutex, shared_time
-d_mutex, lock_guard, scoped_lock, unique_lock, shared_lock, defer_lock_t,
- try_to_lock_t, adopt_lock_t, try_lock, lock, once_flag, call_once, condition_va
-riable, condition_variable_any, notify_all_at_thread_exit, cv_status, promise,
- packaged_task, future, shared_future, async, launch, future_status, future_erro
-r, future_category, future_errc, hardware_destructive_interference_size,
+emph={[7] thread,
+ yield,
+ get_id,
+ sleep_for,
+ sleep_until,
+ thread_local,
+ memory,
+ mutex,
+ parallel,
+ mutex,
+ timed_mutex,
+ recursive_mutex,
+ shared_mutex,
+ shared_timed_mutex,
+ lock_guard,
+ scoped_lock,
+ unique_lock,
+ shared_lock,
+ defer_lock_t,
+ try_to_lock_t,
+ adopt_lock_t,
+ try_lock,
+ lock,
+ once_flag,
+ call_once,
+ condition_variable,
+ condition_variable_any,
+ notify_all_at_thread_exit,
+ cv_status,
+ promise,
+ packaged_task,
+ future,
+ shared_future,
+ async,
+ launch,
+ future_status,
+ future_error,
+ future_category,
+ future_errc,
+ hardware_destructive_interference_size,
  hardware_constructive_interference_size  } ,
 \end_layout
 
@@ -940,7 +1198,8 @@ color{mymauve}},
 status open
 
 \begin_layout Plain Layout
-O style=iC++ é o C++ sem numeração; pode colocar outra cor de fundo
+O style=iC++ é o C++ sem numeração;
+ pode colocar outra cor de fundo
 \end_layout
 
 \begin_layout Plain Layout
@@ -970,7 +1229,8 @@ lstdefinestyle{iC++}
 
 \begin_layout Plain Layout
 
-numbers=none, 
+numbers=none,
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1010,10 +1270,15 @@ lstdefinestyle{out}
 
 \begin_layout Plain Layout
 
-{frame=lines,numbers=none, caption=, language=, breaklines=true, backgroundcolor
-=
+{frame=lines,numbers=none,
+ caption=,
+ language=,
+ breaklines=true,
+ backgroundcolor=
 \backslash
-color{azulclaro}, extendedchars=true, basicstyle=
+color{azulclaro},
+ extendedchars=true,
+ basicstyle=
 \backslash
 footnotesize
 \backslash
@@ -1043,10 +1308,15 @@ status open
 
 
 \backslash
-lstdefinestyle{italico} {frame=lines,numbers=none, caption=, language=,
- breaklines=true, backgroundcolor=
+lstdefinestyle{italico} {frame=lines,numbers=none,
+ caption=,
+ language=,
+ breaklines=true,
+ backgroundcolor=
 \backslash
-color[rgb]{1,.87,0}, extendedchars=true, basicstyle=
+color[rgb]{1,.87,0},
+ extendedchars=true,
+ basicstyle=
 \backslash
 footnotesize
 \backslash
@@ -1076,8 +1346,7 @@ status open
 
 
 \backslash
-lstdefinestyle{Gnuplot} {caption=,language=Gnuplot,breaklines=true,backgroundcol
-or=
+lstdefinestyle{Gnuplot} {caption=,language=Gnuplot,breaklines=true,backgroundcolor=
 \backslash
 color{azulclaro},extendedchars=true,basicstyle=
 \backslash
@@ -1201,7 +1470,8 @@ C++
 \end_layout
 
 \begin_layout Plain Layout
-(listagem linha no topo e abaixo, toda colorida de acordo com palavra chave,
+(listagem linha no topo e abaixo,
+ toda colorida de acordo com palavra chave,
  numerada)
 \end_layout
 
@@ -1210,7 +1480,8 @@ out
 \end_layout
 
 \begin_layout Plain Layout
-(fundo colorido, sem numeração)
+(fundo colorido,
+ sem numeração)
 \end_layout
 
 \begin_layout Plain Layout

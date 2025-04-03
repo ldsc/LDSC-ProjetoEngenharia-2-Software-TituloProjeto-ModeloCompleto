@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -85,11 +85,11 @@
 %\noindent
 \end_preamble
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package auto
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -97,7 +97,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -111,7 +113,7 @@
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -132,7 +134,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -154,11 +158,16 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -182,43 +191,53 @@ status open
 
 
 \backslash
-lhead{
-\backslash
-thechapter
-\backslash
-space - Introdução}
-\backslash
-pagenumbering{arabic}
+fancyhead[L]{Desenvolvimento do Projeto de Engenharia - Projeto Detalhado}
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-lfoot{NomeEquipeAqui} 
+fancyhead[C]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-rfoot{
+fancyhead[R]{
+\backslash
+thepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[L]{NomeProfessor-Cliente}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[C]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[R]{
 \backslash
 today}
 \end_layout
 
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
 \begin_layout Plain Layout
-Substitua "NomeEquipeAqui" pelo nome da equipe
+
+
+\backslash
+pagenumbering{arabic}
 \end_layout
 
 \end_inset
@@ -249,18 +268,19 @@ Apresenta-se aqui a proposta de desenvolvimento do software XX_nome_XX.
 status open
 
 \begin_layout Plain Layout
-NOTE que este capítulo de introdução deve ser uma cópia do capítulo de introduçã
-o ao pré-projeto, mas agora vocês tiveram tempo para detalhar diversas informaçõ
-es da proposta;
+NOTE que este capítulo de introdução deve ser uma cópia do capítulo de introdução ao pré-projeto,
+ mas agora vocês tiveram tempo para detalhar diversas informações da proposta;
 \end_layout
 
 \begin_layout Plain Layout
-Coloque aqui todas as novidades e atualizações melhorando o escopo/resumo/objeti
-vos.
+Coloque aqui todas as novidades e atualizações melhorando o escopo/resumo/objetivos.
 \end_layout
 
 \begin_layout Plain Layout
-Ou seja, o projeto detalhado, como o nome diz, deve ser detalhado.
+Ou seja,
+ o projeto detalhado,
+ como o nome diz,
+ deve ser detalhado.
 \end_layout
 
 \end_inset
@@ -282,8 +302,9 @@ LDSC-2023-1-P50
 status open
 
 \begin_layout Plain Layout
-Numero informado pelo professor, leva em conta o número de projetos desenvolvido
-s no LDSC, ano e semestre
+Numero informado pelo professor,
+ leva em conta o número de projetos desenvolvidos no LDSC,
+ ano e semestre
 \end_layout
 
 \end_inset
@@ -296,8 +317,7 @@ Tipo de investimento /divulgação
 \end_layout
 
 \begin_layout Itemize
-PROJETO DE PESQUISA E DESENVOLVIMENTO / DESENVOLVIMENTO DE SOFTWARE - Versão
- 2 
+PROJETO DE PESQUISA E DESENVOLVIMENTO / DESENVOLVIMENTO DE SOFTWARE - Versão 2 
 \end_layout
 
 \begin_layout Subsubsection
@@ -310,7 +330,8 @@ Trabalho de disciplina
 status open
 
 \begin_layout Plain Layout
-ex: Termo de Cooperação / Convênio
+ex:
+ Termo de Cooperação / Convênio
 \end_layout
 
 \end_inset
@@ -339,7 +360,8 @@ Palavras-chave
 \end_layout
 
 \begin_layout Section
-Identificação da Universidade, Instituições e Empresas Participantes
+Identificação da Universidade,
+ Instituições e Empresas Participantes
 \end_layout
 
 \begin_layout Subsection
@@ -378,7 +400,8 @@ Representante pela universidade:
 
 \begin_deeper
 \begin_layout Itemize
-Professor(a): Nome/email/telefone.
+Professor(a):
+ Nome/email/telefone.
 \end_layout
 
 \end_deeper
@@ -396,7 +419,8 @@ Representante da instituição/fundação:
 
 \begin_deeper
 \begin_layout Itemize
-Professor(a): Nome/email/telefone.
+Professor(a):
+ Nome/email/telefone.
 \end_layout
 
 \end_deeper
@@ -409,7 +433,8 @@ Nome empresa se houver.
 \end_layout
 
 \begin_layout Itemize
-Dados da empresa (CNPj, contatos).
+Dados da empresa (CNPj,
+ contatos).
 \end_layout
 
 \begin_layout Itemize
@@ -418,7 +443,8 @@ Representante pela empresa:
 
 \begin_deeper
 \begin_layout Itemize
-Engenheiro(a): Nome/email/telefone.
+Engenheiro(a):
+ Nome/email/telefone.
 \end_layout
 
 \end_deeper
@@ -444,7 +470,8 @@ Representante pela equipe:
 
 \begin_deeper
 \begin_layout Itemize
-Estudante: Nome/email/telefone.
+Estudante:
+ Nome/email/telefone.
 \end_layout
 
 \end_deeper
@@ -460,11 +487,13 @@ name "sec:Resumo"
 \end_layout
 
 \begin_layout Itemize
-Limite de 500 palavras, então seja bem direto!
+Limite de 500 palavras,
+ então seja bem direto!
 \end_layout
 
 \begin_layout Itemize
-Escreva no final, depois de escrever todo o resto.
+Escreva no final,
+ depois de escrever todo o resto.
 \end_layout
 
 \begin_layout Section
@@ -484,26 +513,29 @@ Definir o escopo do problema de engenharia
 status open
 
 \begin_layout Itemize
-problemas vinculados à: i) engenharia de petróleo, ii) algoritmos computacionais
-, iii) sistemas de software
+problemas vinculados à:
+ i) engenharia de petróleo,
+ ii) algoritmos computacionais,
+ iii) sistemas de software
 \end_layout
 
 \end_inset
 
-, a ideia geral.
+,
+ a ideia geral.
  Destacar sua importância/relevância.
 \end_layout
 
 \begin_layout Itemize
-Definir a abrangência, delimintando o assunto (para que caiba no prazo de
- até 24 meses).
+Definir a abrangência,
+ delimintando o assunto (para que caiba no prazo de até 24 meses).
  
 \end_layout
 
 \begin_layout Itemize
 Situá-lo no tempo e no espaço.
- Situá-lo em relação a outros concorrentes (sistemas similares, como softwares
- similares).
+ Situá-lo em relação a outros concorrentes (sistemas similares,
+ como softwares similares).
 \end_layout
 
 \begin_layout Section
@@ -531,14 +563,16 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Descreva aqui o objetivo geral do projeto de engenharia, incluindo vínculos
- com engenharia de petróleo e com modelagem matemática computacional (ideia
- de lógica, algoritmos,...).
+Descreva aqui o objetivo geral do projeto de engenharia,
+ incluindo vínculos com engenharia de petróleo e com modelagem matemática computacional (ideia de lógica,
+ algoritmos,...).
 \end_layout
 
 \begin_layout Itemize
-Desenvolver um projeto de engenharia de software para ...[.....descrever de forma
- clara, direta, objetiva, o objetivo geral do software].
+Desenvolver um projeto de engenharia de software para ...[.....descrever de forma clara,
+ direta,
+ objetiva,
+ o objetivo geral do software].
 \end_layout
 
 \end_deeper
@@ -556,23 +590,29 @@ Modelar física e matematicamente o problema.
 \end_layout
 
 \begin_layout Itemize
-Modelagem estática do software (diagramas de caso de uso, de pacotes, de
- classes).
+Modelagem estática do software (diagramas de caso de uso,
+ de pacotes,
+ de classes).
 \end_layout
 
 \begin_layout Itemize
-Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificand
-o os fluxos de processamento).
+Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificando os fluxos de processamento).
 \end_layout
 
 \begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
+Calcular XXX[.....descrever de forma clara,
+ direta,
+ objetiva,
+ cada objetivo específico,
+ cada parte do software].
 \end_layout
 
 \begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
+Calcular XXX[.....descrever de forma clara,
+ direta,
+ objetiva,
+ cada objetivo específico,
+ cada parte do software].
 \end_layout
 
 \begin_layout Itemize
@@ -588,13 +628,12 @@ Implementar manual simplificado de uso do software.
 status open
 
 \begin_layout Plain Layout
-No pré-projeto vocês colocaram os objetivos específicos; depois houve uma
- prazo para análise pelo coordenador e gerente técnico;
+No pré-projeto vocês colocaram os objetivos específicos;
+ depois houve uma prazo para análise pelo coordenador e gerente técnico;
 \end_layout
 
 \begin_layout Plain Layout
-neste meio tempo novas análises foram feitas e os objetivos específicos
- puderão ser mais bem detalhados;
+neste meio tempo novas análises foram feitas e os objetivos específicos puderão ser mais bem detalhados;
 \end_layout
 
 \begin_layout Plain Layout

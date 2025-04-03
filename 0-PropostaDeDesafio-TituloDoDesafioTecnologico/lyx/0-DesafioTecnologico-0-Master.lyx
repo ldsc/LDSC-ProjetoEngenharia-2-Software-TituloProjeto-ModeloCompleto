@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -86,11 +86,11 @@
 \end_preamble
 \options normaltoc, sumarioincompleto
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package auto
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -98,7 +98,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -108,6 +110,8 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref true
@@ -124,7 +128,7 @@
 \pdf_colorlinks false
 \pdf_backref page
 \pdf_pdfusetitle true
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -145,7 +149,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -167,11 +173,16 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle Formal_with_Footline
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -186,6 +197,7 @@ status open
 \begin_inset CommandInset include
 LatexCommand include
 filename "Base.lyx"
+literal "true"
 
 \end_inset
 
@@ -198,6 +210,7 @@ filename "Base.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "0-DesafioTecnologico-1-Capa.lyx"
+literal "true"
 
 \end_inset
 
@@ -215,7 +228,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset FloatList figure
@@ -253,6 +266,7 @@ LatexCommand lstlistoflistings
 \begin_inset CommandInset include
 LatexCommand include
 filename "0-DesafioTecnologico-2-DescricaoDaProposta.lyx"
+literal "true"
 
 \end_inset
 
@@ -260,20 +274,20 @@ filename "0-DesafioTecnologico-2-DescricaoDaProposta.lyx"
 \end_layout
 
 \begin_layout Standard
-\noindent
 \align block
-\begin_inset ERT
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "0-DesafioTecnologico-2-MetodologiaUtilizada.lyx"
+literal "true"
+
+\end_inset
 
 
-\backslash
-lhead{Referências} 
-\backslash
-chead{} 
-\backslash
-rhead{}
 \end_layout
 
 \end_inset
@@ -288,18 +302,6 @@ rhead{}
 LatexCommand bibtex
 bibfiles "bibliografia"
 options "apalike"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset index_print
-LatexCommand printindex
-type "idx"
-name "Índice"
-literal "true"
 
 \end_inset
 

@@ -185,11 +185,51 @@ status open
 
 
 \backslash
-lhead{
+fancyhead[L]{Desenvolvimento do Projeto de Engenharia - Descrição do Desafio tecnológico - Proposta}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-thechapter
+fancyhead[C]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-space - Desenvolvimento do Projeto de Engenharia - Descrição da Proposta} 
+fancyhead[R]{
+\backslash
+thepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[L]{NomeProfessor-Cliente}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[C]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[R]{
+\backslash
+today}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 pagenumbering{arabic}
 \end_layout
@@ -200,23 +240,6 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lfoot{NomeDoProfessorQueElaborouODesafio} 
-\backslash
-rfoot{
-\backslash
-today}
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Note
 status open
 
@@ -253,6 +276,20 @@ descrição em um parágrafo
 \end_inset
 
 
+\end_layout
+
+\begin_layout Description
+Nota:
+ esta proposta tem como base a metodologia apresentada no documento 
+\begin_inset CommandInset href
+LatexCommand href
+name "Metodologia-Instrucoes-Etapas.pdf"
+target "https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas/blob/main/0-Metodologia-Instrucoes-Etapas/lyx/ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas.pdf"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -514,7 +551,10 @@ Coloque aqui um conjunto de informações que podem ajudar no entendimento do es
 Pode incluir links para material externo e referências bibliográficas.
 \end_layout
 
-\begin_deeper
+\begin_layout Itemize
+Para adicionar referências bibliográficas adicione os dados do livro/artigo no arquivo bibliografia.bib e inclua aqui a referência (menu ou ícon inserir citação).
+\end_layout
+
 \begin_layout Description
 Nota:
  No modelo disponibilizado no 
@@ -536,6 +576,7 @@ MaterialAuxiliar:
  Material auxiliar ao projeto desenvolvido internamente.
 \end_layout
 
+\begin_deeper
 \begin_layout Description
 MaterialExterno:
  Material auxiliar ao projeto desenvolvido por terceiros (adicionar lista de referências na bibliografia e citar autores).
@@ -592,6 +633,68 @@ literal "false"
 
 ,
  e a linguagem de programação C++ em função do baixo consumo de memória e alto desempenho.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Referências bibliográficas complementares
+\end_layout
+
+\begin_layout Itemize
+Entre as referências utilizadas podemos citar:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+UML:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "prog-UML-MartimFowler,prog-UML-Rumbaugh,prog-UML-blaha,prog-UML-Sonerville"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Projetos:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "projetos-introducao,projetos-pmi,projetos-projetoeletrico1,projetos-Woiler"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Gestão de Projetos:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "projetos-Abrantes,projetos-gestao,projetos-Heldman,projetos-Menezes,projetos-Pahl,projetos-Valeriano,projetos-Rosa"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Produtos:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "projetos-Abrantes"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_deeper

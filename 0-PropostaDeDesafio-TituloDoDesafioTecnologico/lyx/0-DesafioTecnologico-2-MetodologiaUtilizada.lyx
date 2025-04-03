@@ -1,0 +1,908 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+%-----------------------------------------------------------------
+% Para incluir formatações especificas para apresentações
+%-----------------------------------------------------------------
+%https://tex.stackexchange.com/questions/5894/latex-conditional-expression
+% Abaixo inserimos o pacote etoolbox que permite a gestão de if..else
+\usepackage{etoolbox}
+% Cria o flag
+\newtoggle{FormatoApresentacaoTRUE}
+\newtoggle{IncluirBibliografiaNoCapituloTRUE}
+%Seta o flag - deixe true se for para gerar apresentação de aula e false para formato livro
+%\toggletrue{FormatoApresentacaoTRUE}
+\togglefalse{FormatoApresentacaoTRUE}
+%\toggletrue{IncluirBibliografiaNoCapituloTRUE}
+\togglefalse{IncluirBibliografiaNoCapituloTRUE}
+
+% Para usar no meio dos arquivos do lyx crie um comando latex e cole o texto abaixo
+%\iftoggle{FormatoApresentacaoTRUE}{..verdadeiro..}{..falso..}
+%\iftoggle{FormatoApresentacaoTRUE}{\newpage}{}
+
+%---------------------------------------------------------------
+% Para adicionar/excluir uma seção inteira
+%---------------------------------------------------------------
+%https://tex.stackexchange.com/questions/193295/lyx-conditional-sections
+% Abaixo criamos um novo if
+\newif\ifIncluirSecaoProgramacaoAvancada
+%\FormatoApresentacaoWidefalse
+\IncluirSecaoProgramacaoAvancadatrue
+% Para usar
+% \ifIncluirSecaoProgramacaoAvancada no início do blobo
+% \fi para finalizar o bloco
+
+%---------------------------------------------------------------
+%GERAL
+%---------------------------------------------------------------
+\usepackage{verbatim}
+%%\usepackage{algorithm}
+\usepackage{fancyvrb}
+\usepackage{keyval} 
+\usepackage{indentfirst}
+%\usepackage{color}
+\usepackage{xcolor}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+\definecolor{BLACK}{rgb}{0,0,0}%   rgb color model
+\definecolor{BLUE}{rgb}{0,0,1}%   rgb color model
+
+%Informa que vai usar o pacote listings, disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+
+%Define um novo comando, chamado lst
+%observe que lst chama o comando  lstinputlisting.
+\newcommand{\lst}[2]{%
+    \noindent\rule[-1ex]{\textwidth}{0.3mm}\vspace{-1ex}
+    \lstinputlisting[caption={#2},label={#1},stringspaces=false,frame={tb},lineskip=-1pt,extendedchars=true,%
+    basicstyle=\footnotesize\tt,labelstep=1,labelstyle=\tiny,indent=2em,language=Java,breaklines]{#1}
+    \vspace{1ex}%
+}
+
+%\listfiles
+%\usepackage[]{hyperref}
+
+%\usepackage{mathptmx}  % instead of package times
+
+%\usepackage[scaled=0.9]{helvet} % or [scaled=0.92], if you like
+
+%% Pacote de citações para formato abnt
+%%\usepackage[num]{abntcite}
+%%\usepackage[alf]{abntcite}
+
+%%\usepackage[cam,a4,center]{crop}
+%% a4 é o tamanho físico
+%% center é para centralizar
+%% cam inclui quatro marcas diferentes
+
+%%\usepackage[cam,width=20truecm,height=28truecm,center]{crop}
+%\usepackage[cam,width=18truecm,height=26truecm,center]{crop}
+
+%\noindent
+\end_preamble
+\use_default_options false
+\master 1-DesafioTecnologico-0-Master.lyx
+\maintain_unincluded_children no
+\language brazilian
+\language_package auto
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Metodologia Utilizada 
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Etapas: do desafio tecnológico ao produto final"
+
+\end_inset
+
+ mostra a metodologia que será utilizada pela equipe no desenvolvimento do sistema(software).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/andreduartebueno/Dropbox/02-Ensino/1-Apostilas-Livros-Pessoais/Livro-2-IntroducaoAoProjetoDeEngenharia-ProjetoCientifico-Tecnologico-Produtos-AndreDuarteBueno/Livro/imagens/P04-C03/Engenharia-Modelos-Processos-Projetos-ImplantacaoExecucao.png
+	lyxscale 25
+	width 100col%
+	height 100text%
+	keepAspectRatio
+	special height=0.95\textheight
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Paradigmas,
+ modelos e normas/processos.
+ Etapas:
+ Do desafio tecnológico ao produto final
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Etapas: do desafio tecnológico ao produto final"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conceitos de TRL,
+ CRL,
+ paradigmas,
+ modelos e processos
+\end_layout
+
+\begin_layout Standard
+Apresenta-se aqui um conjunto de conceitos e informações associados a metodologia utilizada.
+\end_layout
+
+\begin_layout Subsection
+TRL
+\end_layout
+
+\begin_layout Standard
+Se não sabe definir o nível de TRL,
+ veja uma breve descrição do que é TRL na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Diagrama ilustrando o conceito de TRL"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../../../02-Ensino/1-Apostilas-Livros-Pessoais/Livro-2-IntroducaoAoProjetoDeEngenharia-ProjetoCientifico-Tecnologico-Produtos-AndreDuarteBueno/Livro/imagens/ProjetoEngenharia-TRL/trl-wide-circular.png
+	lyxscale 25
+	width 100text%
+	keepAspectRatio
+	special height=0.85\textheight
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama ilustrando o conceito de TRL
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Diagrama ilustrando o conceito de TRL"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+CRL
+\end_layout
+
+\begin_layout Standard
+Se não sabe definir o nível de CRL,
+ veja uma breve descrição do que é CRL na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:O-que-é-crl"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../../../02-Ensino/1-Apostilas-Livros-Pessoais/Livro-2-IntroducaoAoProjetoDeEngenharia-ProjetoCientifico-Tecnologico-Produtos-AndreDuarteBueno/Livro/imagens/Petrobras-Sigitec/1-AmbienteCompetitividade-OP1252-InformacoesBasicas/AmbienteCompetitividade-InformacoesBasicas-5-crl.png
+	width 99col%
+	keepAspectRatio
+	special height=0.95\textheight
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+O que é CRL
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:O-que-é-crl"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Paradigmas
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Etapas: do desafio tecnológico ao produto final"
+
+\end_inset
+
+ mostra a metodologia que será utilizada pela equipe no desenvolvimento de sistemas de software.
+ 
+\end_layout
+
+\begin_layout Standard
+Note que na parte de cima da figura temos:
+\end_layout
+
+\begin_layout Itemize
+Engenharia - Paradigmas:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A visão adotada pela equipe de desenvolvimento do software utiliza o paradigma da orientação a objetos.
+\end_layout
+
+\begin_layout Itemize
+A forma como vemos a coisa afeta o resultado final.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Modelos 
+\end_layout
+
+\begin_layout Itemize
+Engenharia - Modelos e Modelagem:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Os modelos serão desenvolvidos usando a linguagem de modelagem UML (veja especificações no site 
+\begin_inset CommandInset href
+LatexCommand href
+name "UML"
+target "https://www.uml.org/"
+literal "false"
+
+\end_inset
+
+) que é universalmente aceita e amplamente utilizada.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Processos
+\end_layout
+
+\begin_layout Itemize
+Engenharia - Normas e Processos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O processo de desenvolvimento utiliza uma metodologia de gestão ágil baseada em scrum (veja descrição no site da 
+\begin_inset CommandInset href
+LatexCommand href
+name "aws"
+target "https://aws.amazon.com/pt/what-is/scrum/#:~:text=O%20Scrum%20%C3%A9%20um%20framework,uma%20entrega%20eficiente%20de%20projetos."
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap: Metodologias ágeis"
+
+\end_inset
+
+,
+ em amarelo,
+ itens associados a scrum.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Etapas/Ciclos de desenvolvimento
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\size large
+\begin_inset Graphics
+	filename ../../../../../../02-Ensino/1-Apostilas-Livros-Pessoais/Livro-2-IntroducaoAoProjetoDeEngenharia-ProjetoCientifico-Tecnologico-Produtos-AndreDuarteBueno/Livro/imagens/P04-C04/EngenhariaSoftware-Geral-Wide.png
+	lyxscale 25
+	width 100col%
+	height 100theight%
+	keepAspectRatio
+	special height=0.95\textheight
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologias Ágeis:
+ reuniões e ciclos de desenvolvimento
+\begin_inset CommandInset label
+LatexCommand label
+name "cap: Metodologias ágeis"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os passos ou etapas são descritos a seguir:
+\end_layout
+
+\begin_layout Itemize
+O passo 0:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Diretório:
+ 0-PropostaDeDesafio-TituloDoDesafioTecnologico.
+\end_layout
+
+\begin_layout Itemize
+É a elaboração do desafio tecnológico pelo cliente (professor ou empresa) [este documento]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O passo 1:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Diretório:
+ 1-PreProjeto-IdentificacaoDaProposta-Escopo-Objetivos-Etapas-Cronograma-Orcamento-Rascunho.
+\end_layout
+
+\begin_layout Itemize
+É a elaboração do pré-projeto.
+ 
+\end_layout
+
+\begin_layout Itemize
+Uma versão inicial do projeto elaborada pelos alunos com base no desafio tecnológico.
+ 
+\end_layout
+
+\begin_layout Itemize
+Precisa ser revisada/corrigida pelo cliente.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O passo 2:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Diretório:
+ 2-Projeto-IdentificacaoDaProposta-Escopo-Objetivos-Etapas-Cronograma-Orcamento-ContratoDetalhado.
+\end_layout
+
+\begin_layout Itemize
+É a elaboração do projeto final detalhado.
+\end_layout
+
+\begin_layout Itemize
+Inclui detalhes,
+ cronogramas e orçamentos (no caso de envolver custos).
+\end_layout
+
+\begin_layout Itemize
+É a versão final que define claramente o que vai ser feito.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Depois de iniciado não deve ser alterado o escopo do projeto pois isto impactaria nos prazos.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+O passo 3:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Diretório:
+ 3-Execucao-ModelosDeEngenharia.
+\end_layout
+
+\begin_layout Itemize
+O primeiro ciclo de desenvolvimento do sistema é o
+\emph on
+ Ciclo de Concepção e Análise
+\emph default
+,
+ onde são elaboradas,
+ de forma cíclica,
+ as etapas de:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Concepção
+\series default
+:
+ a partir do desafio tecnológico são detalhadas a especificação e requisitos dos sistema,
+ elaborados os diagramas de casos de uso do software).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Elaboração
+\series default
+:
+ estudo detalhado do problema incluindo revisão bibliográfica,
+ desenvolvimento de equações e modelos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Análise Orientada a Objeto
+\series default
+:
+ desenvolvimento de diversos diagramas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estruturais:
+ diagramas de pacotes(áreas/assuntos),
+ diagramas de componentes,
+ diagramas de classe.
+ Diagramas de implantação.
+\end_layout
+
+\begin_layout Itemize
+Dinâmicos:
+ diagramas de caso de uso,
+ diagrama de sequência,
+ diagramas de componentes,
+ diagramas de máquina de estado,
+ diagramas de comunicação.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Projeto do Sistema
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tomar decisões sobre arquitetura do sistema,
+ sistemas operacionais,
+ linguagens,
+ bibliotecas(componentes externos e internos),
+ infraestrutura,
+ recursos,
+ pessoal,
+ etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Projeto Orientado a Objeto
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Revisão de todos os diagramas considerando as decisões do Projeto do Sistema.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Testes
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Realização de testes lógicos,
+ conceituais usando os diagramas.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Documentação
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+De todas as atividades desenvolvidas.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+O passo 4:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Diretório:
+ 4-Execucao-Detalhamento-Construcao-Versao-1.
+\end_layout
+
+\begin_layout Itemize
+É o primeiro ciclo de desenvolvimento,
+ passa por:
+\end_layout
+
+\begin_layout Itemize
+Seleção do conjunto de funcionalidades(e atividades) que farão parte deste ciclo (
+\emph on
+sprint
+\emph default
+).
+\end_layout
+
+\begin_layout Itemize
+Detalhamento dos modelos e planejamento das atividades.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+As 
+\emph on
+funcionalidades/features
+\emph default
+ a serem desenvolvidas são olhadas com lente de aumento,
+ visando identificar demandas adicionais,
+ ver detalhes que irão afetar as etapa posterior de implementação,
+ e adicionar isto nos diagramas desenvolvidos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Codificação,
+ desenvolvimento efetivo dos códigos (escrever,
+ compilar,
+ executar).
+\end_layout
+
+\begin_layout Itemize
+Documentação dos códigos desenvolvidos.
+\end_layout
+
+\begin_layout Itemize
+Teste dos códigos desenvolvidos (ex:
+ testes de unidade e testes de integração).
+\end_layout
+
+\begin_layout Itemize
+Entrega da versão e reunião de revisão do que foi feito (revisão da 
+\emph on
+sprint
+\emph default
+).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Os passos 5,6,7...:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Repetem os itens do passo 4.
+\end_layout
+
+\begin_layout Itemize
+Serão feitos tantos ciclos de detalhamento e implantação quanto necessário.
+\end_layout
+
+\begin_layout Itemize
+Esteja atento aos prazos e cronogramas.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Dicas extras
+\end_layout
+
+\begin_layout Itemize
+É um projeto de longo prazo,
+ o que requer muita dedicação ao longo de todos os semestres envolvidos.
+ 
+\end_layout
+
+\begin_layout Itemize
+A dica é não deixar para depois imaginando que terá condições de fazer "rápido¨,
+ projetos de engenharia por definição são demorados.
+\end_layout
+
+\begin_layout Itemize
+Utilizamos uma metodologia de gestão ágil baseada em scrum.
+ Veja itens em amarelo na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap: Metodologias ágeis"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tem muito material sobre scrum na internet e livros na biblioteca.
+\end_layout
+
+\begin_layout Itemize
+Disponibilizamos no google classroom da turma aulas de diversas ferramentas utilizadas.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Os modelos de software a serem desenvolvidos utilizam o paradigma da orientação a objetos,
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "prog-UML-blaha,prog-UML-Rumbaugh,adb-prog-livroCpp"
+literal "false"
+
+\end_inset
+
+,
+ e a linguagem de programação C++ em função do baixo consumo de memória e alto desempenho.
+ 
+\end_layout
+
+\begin_layout Itemize
+Não é permitido o uso de outros modelos,
+ linguagens ou ferramentas.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O objetivo deste projeto é consolidar o uso de um conjunto de modelos,
+ ferramentas e sistemas vistos em sala de aula.
+ 
+\end_layout
+
+\begin_layout Itemize
+As ciências da computação são uma área de conhecimento enorme,
+ nosso objetivo é mostrar de ponta a ponta o desenvolvimento de um sistema de software utilizando os padrões adotados nas disciplinas.
+\end_layout
+
+\begin_layout Itemize
+O(s) aluno(s) após encerrarem a disciplina de 
+\begin_inset CommandInset href
+LatexCommand href
+name "Projeto de Software Aplicado à Engenharia"
+target "https://sites.google.com/view/professorandreduartebueno/ensino/projeto-de-software-aplicado"
+literal "false"
+
+\end_inset
+
+,
+ podem dar continuidade ao projeto adicionando novos ciclos e defendendo o projeto final como seu TCC.
+ O exemplo é a adição de interfaces gráficas amigáveis usando Qt.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
