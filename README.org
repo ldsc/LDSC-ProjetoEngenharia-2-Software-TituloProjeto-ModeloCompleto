@@ -10,7 +10,7 @@
 - 1.0.
 
 * Data:
-- 2024/2 - segundo semestre.
+- 2025/1 - primeiro semestre.
   
 * Autor de Contato:
 - André Duarte Bueno <andreduartebueno@gmail.com>
@@ -21,8 +21,10 @@
 
 * Áreas de pesquisa vinculadas: 
 - Modelagem Matemática Computacional
-- Engenharia de Reservatório
-- ...
+- ...Engenharia de Reservatório?
+- ...Geofísica?
+- ...Petrofísica?
+- ...Geologia e geoquímica?
 
 * Vinculo com: 
 - [[https://sites.google.com/view/professorandreduartebueno/ensino/projeto-de-software-aplicado][Trabalho da disciplina Projeto de Software Aplicado à Engenharia]].
@@ -44,6 +46,7 @@
 
 * Bibliotecas Utilizadas (dependências):
 - CGnuplot - https://github.com/ldsc/CGnuplot
+- QCustomPlot - https://www.qcustomplot.com/
 
 * Softwares utilizados (dependências)
 - gnuplot http://www.gnuplot.info/
@@ -67,7 +70,7 @@
 
   
 * Vinculo com: 
-- A versão 1, desenvolvida pelo Matheus utiliza metodologia antiga, as próximas versões devem usar a metodologia descrita [[https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas][aqui]].
+- Em alguns casos a versão 1 foi desenvolvida utilizando a metodologia antiga. Nestes casos é necessário copiar os dados da nova versão para a versão antiga. De forma que as próximas versões devem usar a metodologia descrita [[https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas][aqui]].
 - [[https://sites.google.com/view/professorandreduartebueno/ensino/projeto-de-software-aplicado][Trabalho da disciplina Projeto de Software Aplicado à Engenharia]].
 - Uma lista de outros projetos desenvolvidos no LDSC é disponibilizado [[https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas][aqui]].
 
