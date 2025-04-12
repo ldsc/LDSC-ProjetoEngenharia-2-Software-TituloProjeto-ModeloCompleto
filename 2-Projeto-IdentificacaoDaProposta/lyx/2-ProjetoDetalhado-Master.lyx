@@ -6,30 +6,83 @@
 \origin unavailable
 \textclass extbook
 \begin_preamble
-\usepackage {graphicx}
-\usepackage {longtable}
-\usepackage {indentfirst}
-\renewenvironment{center}{\par\centering}{\par}
+%-----------------------------------------------------------------
+% Para incluir formatações especificas para apresentações
+%-----------------------------------------------------------------
+%https://tex.stackexchange.com/questions/5894/latex-conditional-expression
+% Abaixo inserimos o pacote etoolbox que permite a gestão de if..else
+\usepackage{etoolbox}
+% Cria o flag
+\newtoggle{FormatoApresentacaoTRUE}
+\newtoggle{IncluirBibliografiaNoCapituloTRUE}
+%Seta o flag - deixe true se for para gerar apresentação de aula e false para formato livro
+%\toggletrue{FormatoApresentacaoTRUE}
+\togglefalse{FormatoApresentacaoTRUE}
+%\toggletrue{IncluirBibliografiaNoCapituloTRUE}
+\togglefalse{IncluirBibliografiaNoCapituloTRUE}
 
-% Comentar linhas abaixo se não estiver usando pacote abntex
-% ou se o pacote ainda não foi instalado.
-% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
-% para usar abnt tem de instalar os arquivos: dnf install texlive-abnt2
-% verificar onde os mesmos estão: rpm -ql texlive-abntex2
-% reconfigurar o latex e o lyx (lyx->ferramentas->reconfigurar). E ativar linhas abaixo.
-% na aba de configuração do lyx, mude a classe de documento para abnt.
-%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
-%\usepackage {helvet}
-%\renewcommand {\familydefault}{\sfdefault}
+% Para usar no meio dos arquivos do lyx crie um comando latex e cole o texto abaixo
+%\iftoggle{FormatoApresentacaoTRUE}{..verdadeiro..}{..falso..}
+%\iftoggle{FormatoApresentacaoTRUE}{\newpage}{}
 
-% Para uso de listagens de código
-\usepackage{color}
+%---------------------------------------------------------------
+% Para adicionar/excluir uma seção inteira
+%---------------------------------------------------------------
+%https://tex.stackexchange.com/questions/193295/lyx-conditional-sections
+% Abaixo criamos um novo if
+\newif\ifIncluirSecaoProgramacaoAvancada
+%\FormatoApresentacaoWidefalse
+\IncluirSecaoProgramacaoAvancadatrue
+% Para usar
+% \ifIncluirSecaoProgramacaoAvancada no início do blobo
+% \fi para finalizar o bloco
+
+%---------------------------------------------------------------
+%GERAL
+%---------------------------------------------------------------
+\usepackage{verbatim}
+%%\usepackage{algorithm}
+\usepackage{fancyvrb}
+\usepackage{keyval} 
+\usepackage{indentfirst}
+%\usepackage{color}
+\usepackage{xcolor}
 \definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
-% Informa que vai usar o pacote listings, 
-% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\definecolor{BLACK}{rgb}{0,0,0}%   rgb color model
+\definecolor{BLUE}{rgb}{0,0,1}%   rgb color model
+
+%Informa que vai usar o pacote listings, disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
 \usepackage{listings}
 
-\renewcommand{\lstlistingname}{Listagem}
+%Define um novo comando, chamado lst
+%observe que lst chama o comando  lstinputlisting.
+\newcommand{\lst}[2]{%
+    \noindent\rule[-1ex]{\textwidth}{0.3mm}\vspace{-1ex}
+    \lstinputlisting[caption={#2},label={#1},stringspaces=false,frame={tb},lineskip=-1pt,extendedchars=true,%
+    basicstyle=\footnotesize\tt,labelstep=1,labelstyle=\tiny,indent=2em,language=Java,breaklines]{#1}
+    \vspace{1ex}%
+}
+
+%\listfiles
+%\usepackage[]{hyperref}
+
+%\usepackage{mathptmx}  % instead of package times
+
+%\usepackage[scaled=0.9]{helvet} % or [scaled=0.92], if you like
+
+%% Pacote de citações para formato abnt
+%%\usepackage[num]{abntcite}
+%%\usepackage[alf]{abntcite}
+
+%%\usepackage[cam,a4,center]{crop}
+%% a4 é o tamanho físico
+%% center é para centralizar
+%% cam inclui quatro marcas diferentes
+
+%%\usepackage[cam,width=20truecm,height=28truecm,center]{crop}
+%\usepackage[cam,width=18truecm,height=26truecm,center]{crop}
+
+%\noindent
 \end_preamble
 \options normaltoc, sumarioincompleto
 \use_default_options false
@@ -57,11 +110,12 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref true
 \pdf_title "Projeto Engenharia: Desenvolvimento Software Aplicado XXXXX"
-\pdf_author "Nome do Autor"
+\pdf_author "Nome membros equipe; Professor André Duarte Bueno; "
 \pdf_subject "Descrever assunto"
 \pdf_keywords "Copiar do resumo"
 \pdf_bookmarks true
@@ -136,7 +190,7 @@
 \align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "1-PreProjeto-0-Capa.lyx"
+filename "2-ProjetoDetalhado-0-Capa.lyx"
 literal "true"
 
 \end_inset
@@ -189,94 +243,10 @@ LatexCommand lstlistoflistings
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fancyhead[L]{Desenvolvimento do Projeto de Engenharia - Pré-Projeto}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fancyhead[C]{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fancyhead[R]{
-\backslash
-thepage}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fancyfoot[L]{NomeProfessor-Cliente}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fancyfoot[C]{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-fancyfoot[R]{
-\backslash
-today}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagenumbering{arabic}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Substitua "NomeEquipeAqui" pelo nome da equipe
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Jamais retire o 
-\backslash
-today ele vai colocar data no material impresso
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "1-PreProjeto-1-Introducao-IdentificacaoDaProposta-Resumo-Escopo-Objetivos.lyx"
+filename "2-ProjetoDetalhado-1-Introducao-IdentificacaoDaProposta.lyx"
 literal "true"
 
 \end_inset
@@ -288,8 +258,50 @@ literal "true"
 \align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "1-PreProjeto-2-Etapas-Atividades-Cronograma-Orcamento.lyx"
+filename "2-ProjetoDetalhado-2-RevisaoBibliografica-Tecnologica.lyx"
 literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "2-ProjetoDetalhado-3-Etapas-Cronograma.lyx"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "2-ProjetoDetalhado-4-Apendice-Metodologia.lyx"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Existe uma metodologia para desenvolvimento do sistema que é disponibilizada no repositório abaixo:
+\end_layout
+
+\begin_layout Plain Layout
+https://github.com/ldsc/LDSC-ProjetoEngenharia-0-Metodologia-Instrucoes-Etapas
+\end_layout
 
 \end_inset
 
@@ -325,52 +337,11 @@ rhead{}
 
 \end_inset
 
-
+Etapas-Padrões/Programadas
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bibliografia"
 options "apalike"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Caso necessário descomenta este bloco e adiciona o apêndice
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-appendix
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "PreProjeto-3-Apendice.lyx"
-literal "true"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
