@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,11 +26,11 @@
 \usepackage{listings}
 \end_preamble
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package auto
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -38,7 +38,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -52,7 +54,7 @@
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -73,7 +75,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -95,11 +99,16 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -140,16 +149,15 @@ space - Introdução}
 status open
 
 \begin_layout Plain Layout
-mantenha esta seção como esta, não modifique
+mantenha esta seção como esta,
+ não modifique
 \end_layout
 
 \end_inset
 
-Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação
- de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver
- um projeto de engenharia; Neste trabalho, apresenta-se a pré-proposta de
- um projeto em engenharia de software aplicado a solução de um problema
- específico da engenharia de petróleo.
+Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver um projeto de engenharia;
+ Neste trabalho,
+ apresenta-se a pré-proposta de um projeto em engenharia de software aplicado a solução de um problema específico da engenharia de petróleo.
  
 \end_layout
 
@@ -166,10 +174,9 @@ O primeiro parágrafo pode ser um super resumo da proposta de projeto.
 \end_layout
 
 \begin_layout Itemize
-PS: Observe que ESTE MODELO TEM TEXTOS EXPLICATIVOS QUE DEVEM SER ELIMINADOS
- DA VERSÃO FINAL.
- O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
- DEVE ENTRAR EM CADA SEÇÃO.
+PS:
+ Observe que ESTE MODELO TEM TEXTOS EXPLICATIVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
+ O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE DEVE ENTRAR EM CADA SEÇÃO.
 \end_layout
 
 \begin_layout Section
@@ -177,12 +184,12 @@ Identificação da Proposta
 \end_layout
 
 \begin_layout Subsubsection
-Tipo de investimento /divulgação: 
+Tipo de investimento /divulgação:
+ 
 \end_layout
 
 \begin_layout Itemize
-PROJETO DE PESQUISA E DESENVOLVIMENTO / DESENVOLVIMENTO DE SOFTWARE - Versão
- 2 
+PROJETO DE PESQUISA E DESENVOLVIMENTO / DESENVOLVIMENTO DE SOFTWARE - Versão 2 
 \end_layout
 
 \begin_layout Subsubsection
@@ -204,28 +211,28 @@ André Duarte Bueno
 \end_layout
 
 \begin_layout Subsubsection
-Gerência técnica: 
+Gerência técnica:
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Nota: caso o projeto tenha algum tipo de vínculo com empresa ou instituição
- externa (como um projeto de extensão), coloque aqui o nome da empresa e
- do engenheiro que irá acompanhar o projeto.
- Caso o acompanhamento venha a ser feito por outro professor da UENF coloque
- aqui o nome do professor e seu laboratório/setor.
+Nota:
+ caso o projeto tenha algum tipo de vínculo com empresa ou instituição externa (como um projeto de extensão),
+ coloque aqui o nome da empresa e do engenheiro que irá acompanhar o projeto.
+ Caso o acompanhamento venha a ser feito por outro professor da UENF coloque aqui o nome do professor e seu laboratório/setor.
 \end_layout
 
 \begin_layout Plain Layout
-Nota: A gerência técnica é responsável pelo apoio técnico, responsável pela
- parte de equações e modelos da área em que o software será desenvolvido.
+Nota:
+ A gerência técnica é responsável pelo apoio técnico,
+ responsável pela parte de equações e modelos da área em que o software será desenvolvido.
  
 \end_layout
 
 \begin_layout Plain Layout
-Por exemplo, se o software é da área de reservatório a gerência técnica
- será de um professor de reservatório ou gerente de empresa que atua na
- área e tem o conhecimento técnico para auxiliar no esclarecimento de dúvidas.
+Por exemplo,
+ se o software é da área de reservatório a gerência técnica será de um professor de reservatório ou gerente de empresa que atua na área e tem o conhecimento técnico para auxiliar no esclarecimento de dúvidas.
 \end_layout
 
 \end_inset
@@ -248,7 +255,8 @@ pode ser um professor(a)
 
 \end_inset
 
-: 
+:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -257,7 +265,8 @@ E-mail:
 status open
 
 \begin_layout Plain Layout
-coloque o email da empresa; institucional
+coloque o email da empresa;
+ institucional
 \end_layout
 
 \end_inset
@@ -289,9 +298,9 @@ Nome (gerente-equipe) [email/telefone]
 status open
 
 \begin_layout Plain Layout
-o gerente da equipe é o aluno que faz a comunicação da equipe com a gerência
- técnica e coordenação.
- Todos se comunicam, mas o projeto deve ter um canal principal de comunicação.
+o gerente da equipe é o aluno que faz a comunicação da equipe com a gerência técnica e coordenação.
+ Todos se comunicam,
+ mas o projeto deve ter um canal principal de comunicação.
 \end_layout
 
 \end_inset
@@ -314,7 +323,8 @@ membros da equipe (até 3 pessoas)
 \end_layout
 
 \begin_layout Subsubsection
-Vínculo institucional do processo: 
+Vínculo institucional do processo:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -344,7 +354,8 @@ ADICIONE O Nome dos demais setores envolvidos
 \end_layout
 
 \begin_layout Subsubsection
-Duração: 
+Duração:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -362,7 +373,8 @@ Considere 3 semestres(5/6/7) ou 4 semestres.
 \end_layout
 
 \begin_layout Subsubsection
-Data de submissão: 
+Data de submissão:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -370,7 +382,8 @@ Coloque aqui a data de entrega do pré-projeto ao professor coordenador
 \end_layout
 
 \begin_layout Subsubsection
-Número da proposta: 
+Número da proposta:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -379,8 +392,9 @@ LDSC-2023-1-P50
 status open
 
 \begin_layout Plain Layout
-Numero informado pelo professor, leva em conta o número de projetos desenvolvido
-s no LDSC, ano e semestre
+Numero informado pelo professor,
+ leva em conta o número de projetos desenvolvidos no LDSC,
+ ano e semestre
 \end_layout
 
 \end_inset
@@ -389,7 +403,8 @@ s no LDSC, ano e semestre
 \end_layout
 
 \begin_layout Subsubsection
-Tipo de instrumento contratual: 
+Tipo de instrumento contratual:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -398,7 +413,8 @@ Trabalho de disciplina
 status open
 
 \begin_layout Plain Layout
-ex: Termo de Cooperação / Convênio
+ex:
+ Termo de Cooperação / Convênio
 \end_layout
 
 \end_inset
@@ -415,7 +431,8 @@ Título do projeto:
 \end_layout
 
 \begin_layout Subsubsection
-Palavras-chave: 
+Palavras-chave:
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -434,11 +451,13 @@ name "sec:Resumo"
 \end_layout
 
 \begin_layout Itemize
-Limite de 500 palavras, então seja bem direto!
+Limite de 500 palavras,
+ então seja bem direto!
 \end_layout
 
 \begin_layout Itemize
-Escreva no final, depois de escrever todo o resto.
+Escreva no final,
+ depois de escrever todo o resto.
 \end_layout
 
 \begin_layout Section
@@ -453,8 +472,10 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Itemize
-Definir o escopo do projeto de engenharia, a ideia geral do software, acentuar
- sua importância, usos e aplicações em engenharia [de petróleo].
+Definir o escopo do projeto de engenharia,
+ a ideia geral do software,
+ acentuar sua importância,
+ usos e aplicações em engenharia [de petróleo].
 \end_layout
 
 \begin_layout Itemize
@@ -488,14 +509,16 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Descreva aqui o objetivo geral do projeto de engenharia, incluindo vínculos
- com engenharia de petróleo e com modelagem matemática computacional (ideia
- de lógica, algoritmos,...).
+Descreva aqui o objetivo geral do projeto de engenharia,
+ incluindo vínculos com engenharia de petróleo e com modelagem matemática computacional (ideia de lógica,
+ algoritmos,...).
 \end_layout
 
 \begin_layout Itemize
-Desenvolver um projeto de engenharia de software para ...[.....descrever de forma
- clara, direta, objetiva, o objetivo geral do software].
+Desenvolver um projeto de engenharia de software para ...[.....descrever de forma clara,
+ direta,
+ objetiva,
+ o objetivo geral do software].
 \end_layout
 
 \end_deeper
@@ -513,23 +536,29 @@ Modelar física e matematicamente o problema.
 \end_layout
 
 \begin_layout Itemize
-Modelagem estática do software (diagramas de caso de uso, de pacotes, de
- classes).
+Modelagem estática do software (diagramas de caso de uso,
+ de pacotes,
+ de classes).
 \end_layout
 
 \begin_layout Itemize
-Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificand
-o os fluxos de processamento).
+Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificando os fluxos de processamento).
 \end_layout
 
 \begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
+Calcular XXX[.....descrever de forma clara,
+ direta,
+ objetiva,
+ cada objetivo específico,
+ cada parte do software].
 \end_layout
 
 \begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
+Calcular XXX[.....descrever de forma clara,
+ direta,
+ objetiva,
+ cada objetivo específico,
+ cada parte do software].
 \end_layout
 
 \begin_layout Itemize
@@ -556,12 +585,18 @@ name "sec:Metodologia"
 A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig: Metodologia utilizada no desenvolvimento do sistema"
+reference "fig:Metodologia utilizada no desenvolvimento do sistema 1: Desafio, pré-projeto e projeto"
+nolink "false"
 
 \end_inset
 
  apresenta a metodologia a ser utilizada no desenvolvimento do sistema.
+ Parte inicial,
+ definição do desafio tecnológico,
+ pré-projeto e projeto.
 \begin_inset Float figure
+placement document
+alignment document
 wide false
 sideways false
 status open
@@ -569,11 +604,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../imagens/ProjetoEngenharia-Etapas-Geral-wide.png
+	filename /home/bueno/Documentos/workdir/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/ProjetoEngenharia-Etapas-Geral-portrait-1.png
 	lyxscale 50
 	width 100text%
-	height 80theight%
-	keepAspectRatio
+	special height=0.8\textheight
 
 \end_inset
 
@@ -584,10 +618,73 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Metodologia utilizada no desenvolvimento do sistema
+Metodologia utilizada no desenvolvimento do sistema 1:
+ Desafio,
+ pré-projeto e projeto
 \begin_inset CommandInset label
 LatexCommand label
-name "fig: Metodologia utilizada no desenvolvimento do sistema"
+name "fig:Metodologia utilizada no desenvolvimento do sistema 1: Desafio, pré-projeto e projeto"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Metodologia utilizada no desenvolvimento do sistema 2: Análise, Implementação e Entrega"
+nolink "false"
+
+\end_inset
+
+ apresenta a metodologia a ser utilizada no desenvolvimento do sistema.
+ Parte de análise,
+ implementação (planejamento detalhes,
+ implementação,
+ testes,
+ documentação) e entrega.
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/bueno/Documentos/workdir/ProjetoEngenharia-SoftwareAnaliseEncrustacaoAmostrasSalmouras/imagens/ProjetoEngenharia-Etapas-Geral-portrait-2.png
+	lyxscale 50
+	width 100text%
+	special height=0.8\textheight
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia utilizada no desenvolvimento do sistema 2:
+ Análise,
+ Implementação e Entrega 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Metodologia utilizada no desenvolvimento do sistema 2: Análise, Implementação e Entrega"
 
 \end_inset
 
@@ -616,8 +713,9 @@ name "sec:Informações-Adicionais-Específicas"
 \end_layout
 
 \begin_layout Itemize
-Coloque aqui informações adicionais, importantes, relevantes e que não se
- encaixaram nos demais tópicos deste documento.
+Coloque aqui informações adicionais,
+ importantes,
+ relevantes e que não se encaixaram nos demais tópicos deste documento.
 \end_layout
 
 \begin_layout Itemize
@@ -626,7 +724,8 @@ Entre as referências utilizadas podemos em sala de aula podemos citar:
 
 \begin_deeper
 \begin_layout Itemize
-UML: 
+UML:
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-UML-blaha,prog-UML-Rumbaugh"
@@ -638,7 +737,8 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Projetos: 
+Projetos:
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "projetos-introducao,projetos-pmi,projetos-projetoeletrico1,projetos-Woiler"
@@ -650,7 +750,8 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Gestão de Projetos: 
+Gestão de Projetos:
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "projetos-Abrantes,projetos-gestao,projetos-Heldman,projetos-Menezes,projetos-Pahl,projetos-Valeriano,projetos-Rosa"
@@ -662,7 +763,8 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Produtos: 
+Produtos:
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "projetos-Abrantes"
@@ -674,7 +776,8 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-C++: 
+C++:
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "adb-prog-livroCpp"
