@@ -1309,6 +1309,137 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Dica importante:
+\end_layout
+
+\begin_layout Plain Layout
+1) Os diagramas devem ser gerados usando o modelador umbrello.
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+2) Para instalar no Fedora:
+\end_layout
+
+\begin_layout Plain Layout
+dnf install umbrello
+\end_layout
+
+\begin_layout Plain Layout
+Para instalar no Windows:
+\end_layout
+
+\begin_layout Plain Layout
+https://uml.sourceforge.io/installation.php#install-windows
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+3) Após instalar,
+ vá no diretório 
+\end_layout
+
+\begin_layout Plain Layout
+NOME-DO-PROJETO/3-Execucao-ModelosDeEngenharia/uml
+\end_layout
+
+\begin_layout Plain Layout
+e crie uma cópia do arquivo Modelo.umbrello.xmi.
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+4) Renomeie esta cópia com o nome do seu projeto.
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+5) Faça os diagramas segundo o que foi visto em sala de aula.
+\end_layout
+
+\begin_layout Plain Layout
+Siga a sequência apresentada no modelo,
+ pois é a mais natural e simples de entender.
+\end_layout
+
+\begin_layout Plain Layout
+Não invente pois é seu primeiro projeto!
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+6) Se tiver dúvidas?
+\end_layout
+
+\begin_layout Plain Layout
+Tem muitos vídeos na internet sobre UML.
+\end_layout
+
+\begin_layout Plain Layout
+Temos livros específicos de UML na biblioteca.
+\end_layout
+
+\begin_layout Plain Layout
+Nas provas e no material de aula tem diversos exemplos.
+\end_layout
+
+\begin_layout Plain Layout
+Nos projetos tem diversos exemplos.
+\end_layout
+
+\begin_layout Plain Layout
+Na mesma pasta irá encontrar alguns exemplos de arquivos de projeto.
+\end_layout
+
+\begin_layout Plain Layout
+Procure o professor.
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+7) Note que as imagens devem ser exportadas para a pasta:
+\end_layout
+
+\begin_layout Plain Layout
+NOME-DO-PROJETO/3-Execucao-ModelosDeEngenharia/lyx/imagens
+\end_layout
+
+\begin_layout Plain Layout
+desta forma ao exportar a imagem a mesma será automaticamente recarregada no LyX.
+\end_layout
+
+\begin_layout Plain Layout
+Você não precisará ficar copiando e colando.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 exemplo...
 \end_layout
 

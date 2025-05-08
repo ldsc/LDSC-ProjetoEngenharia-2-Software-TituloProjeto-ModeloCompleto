@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 25.04.0 (Applications 25.04.0) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="Modelo UML">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View" stereotype="folder">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uLzUOKgkEry8O" name="char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uFIqe1o65Wire" name="int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uVwENU7NfGntU" name="float" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u5PTDfvU9Otl4" name="double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uSExRrBMopUZo" name="bool" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u0VVNwwcYCL1O" name="string" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u80KbWIF5ORPt" name="unsigned char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="umGeHFN6HqJQO" name="signed char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u8KbuBfXypVEb" name="unsigned int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uBrj1nbHBUMlF" name="signed int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="umbL16tBpaWaU" name="short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uZtmVRO4hQTeG" name="unsigned short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ukorM6uWEFDhM" name="signed short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uySoPbg3qBIFo" name="long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uuHD3S5uSW5OY" name="signed long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uGf9TnY4bum7x" name="unsigned long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u41B5iK0TgKT9" name="long double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uTiFY1yD2ufsF" name="wchar_t" stereotype="dataType"/>
+      </uml:Package>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uvWV2vUfa2Khm" name="DiagramaDeClasses" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <notewidget xmi.id="uSzEykcIY67pA" localid="uszIWHi0CuWr6" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" autoresize="0" x="724" y="394" width="319" height="84" isinstance="0" showstereotype="2" text="Diagrama de Caso de Classes&#10;Nome do Projeto&#10;Autores&#10;" noteType="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+          <diagram xmi.id="u6PUYlitjTj6D" name="DiagramaDeAtividade-1" type="6" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <notewidget xmi.id="uU6wnBbHwSYaz" localid="utsT4SqtjOHb0" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" autoresize="0" x="724" y="393" width="319" height="84" isinstance="0" showstereotype="2" text="Diagrama dde Atividades para NomeClasse::NomeMetodo&#10;Nome do Projeto&#10;Autores&#10;" noteType="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+          <diagram xmi.id="u8umeSk2Y2h9c" name="DiagramaDeSequencia-Eventos" type="3" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1" autoincrementsequence="0">
+            <widgets>
+              <notewidget xmi.id="uSzEykcIY67pA" localid="uDGCrjzEYjs1U" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" autoresize="0" x="724" y="394" width="319" height="84" isinstance="0" showstereotype="2" text="Diagrama de Caso de Sequência&#10;Nome do Projeto&#10;Autores&#10;" noteType="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+          <diagram xmi.id="u4xrp1D1QZ1Ih" name="DiagramaDeComunicacao" type="4" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1" autoincrementsequence="0">
+            <widgets>
+              <notewidget xmi.id="uSzEykcIY67pA" localid="uPgHabcAj56Fe" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" autoresize="0" x="724" y="394" width="319" height="84" isinstance="0" showstereotype="2" text="Diagrama de Caso de Comunicação&#10;Nome do Projeto&#10;Autores&#10;" noteType="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+          <diagram xmi.id="uCeXBqA8f5HXk" name="DiagramaDeEstado-ClasseSimulador" type="5" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <notewidget xmi.id="u4xwUOVjFVseL" localid="u1ZVXdOmibEsH" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" autoresize="0" x="724" y="394" width="319" height="84" isinstance="0" showstereotype="2" text="Diagrama de Máquina de Estado para classe CSimulador&#10;Nome do Projeto&#10;Autores&#10;" noteType="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View" stereotype="folder">
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uyYAnAWZiGWfx" name="DiagramaDeCasoDeUso-Especifico-1" type="2" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <notewidget xmi.id="uSzEykcIY67pA" localid="ugV3qb3B1edx2" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" autoresize="0" x="724" y="393" width="319" height="84" isinstance="0" showstereotype="2" text="Diagrama de Caso de Uso Específico 1&#10;Nome do Projeto&#10;Autores&#10;" noteType="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+          <diagram xmi.id="u0n1R1WxjnR4y" name="DiagramaDeCasoUso-Geral" type="2" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <notewidget xmi.id="uSzEykcIY67pA" localid="u0c9c59w9Y65E" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="Adwaita Sans,11,-1,5,50,0,0,0,0,0" autoresize="0" x="724" y="394" width="319" height="84" isinstance="0" showstereotype="2" text="Diagrama de Caso de Uso Geral&#10;Nome do Projeto&#10;Autores&#10;" noteType="0"/>
+            </widgets>
+            <messages/>
+            <associations/>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model" stereotype="folder"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="u6PUYlitjTj6D" documentation="" uniqueid="uU6wnBbHwSYaz"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Use_Case_View" type="802" open="1">
+          <listitem id="uyYAnAWZiGWfx" type="805" label="DiagramaDeCasoDeUso-Especifico-1" open="0"/>
+          <listitem id="u0n1R1WxjnR4y" type="805" label="DiagramaDeCasoUso-Geral" open="0"/>
+        </listitem>
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="u6PUYlitjTj6D" type="809" label="DiagramaDeAtividade-1" open="0"/>
+          <listitem id="uvWV2vUfa2Khm" type="807" label="DiagramaDeClasses" open="0"/>
+          <listitem id="u4xrp1D1QZ1Ih" type="806" label="DiagramaDeComunicacao" open="0"/>
+          <listitem id="uCeXBqA8f5HXk" type="808" label="DiagramaDeEstado-ClasseSimulador" open="0"/>
+          <listitem id="u8umeSk2Y2h9c" type="810" label="DiagramaDeSequencia-Eventos" open="0"/>
+          <listitem id="Datatypes" type="830" open="0">
+            <listitem id="uSExRrBMopUZo" type="829" open="0"/>
+            <listitem id="uLzUOKgkEry8O" type="829" open="0"/>
+            <listitem id="uVwENU7NfGntU" type="829" open="0"/>
+            <listitem id="uFIqe1o65Wire" type="829" open="0"/>
+            <listitem id="u41B5iK0TgKT9" type="829" open="0"/>
+            <listitem id="uySoPbg3qBIFo" type="829" open="0"/>
+            <listitem id="umbL16tBpaWaU" type="829" open="0"/>
+            <listitem id="umGeHFN6HqJQO" type="829" open="0"/>
+            <listitem id="uBrj1nbHBUMlF" type="829" open="0"/>
+            <listitem id="uuHD3S5uSW5OY" type="829" open="0"/>
+            <listitem id="ukorM6uWEFDhM" type="829" open="0"/>
+            <listitem id="u0VVNwwcYCL1O" type="829" open="0"/>
+            <listitem id="u80KbWIF5ORPt" type="829" open="0"/>
+            <listitem id="u8KbuBfXypVEb" type="829" open="0"/>
+            <listitem id="uGf9TnY4bum7x" type="829" open="0"/>
+            <listitem id="uZtmVRO4hQTeG" type="829" open="0"/>
+            <listitem id="uTiFY1yD2ufsF" type="829" open="0"/>
+          </listitem>
+        </listitem>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="C++"/>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>
